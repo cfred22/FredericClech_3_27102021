@@ -1,11 +1,28 @@
-/*--- BASE GÉNÉRAKE DU SITE ----*/
+/*--- BASE GÉNÉRALE DU SITE ----*/
+
+*, *:before, *:after   /*-- box-sizing pour gérer les dimensions  --*/
+{
+    box-sizing: border-box;  /*- résoudre pbm padding & marging pour calcul des box et des % par exemple-*/
+}
+
+#bloc_page
+{
+    display: flex;
+    align-content: center;
+    max-width: 1440px; 
+    width: 100%;
+    padding: 0 50px 0 50px; 
+    margin: auto;     /*-- centrage complet du site --*/
+}
+
+.logo_ohmyfood
+{
+  align-content: center;
+}
 
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-
-
-
 
 h1{ 
     font-family: shrikhand;
