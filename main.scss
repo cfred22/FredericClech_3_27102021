@@ -1,5 +1,9 @@
 /*--- BASE GÉNÉRALE DU SITE ----*/
 
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
 *, *:before, *:after   /*-- box-sizing pour gérer les dimensions  --*/
 {
     box-sizing: border-box;  /*- résoudre pbm padding & marging pour calcul des box et des % par exemple-*/
@@ -20,12 +24,10 @@
   align-content: center;
 }
 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+
 
 h1{ 
     font-family: shrikhand;
-    font-size: 5rem;
+    font-size: 0.5em;
 } 
 
