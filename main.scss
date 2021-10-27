@@ -4,29 +4,51 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
+$font-family-title: 'roboto';
+$font-size-regular: 1.4em;
+$font-size-small: 1.2em;
+$font-size-big: 1.8em;
+
+
 *, *:before, *:after   /*-- box-sizing pour gérer les dimensions  --*/
 {
     box-sizing: border-box;  /*- résoudre pbm padding & marging pour calcul des box et des % par exemple-*/
 }
 
-#bloc_page {
+#bloc_page
+{
     display: flex;
     justify-content: center;
     max-width: 1440px; 
     width: 100%;
-    padding: 0 50px 0 50px; 
+    padding: 0 20px 0 20px; 
     margin: auto;     /*-- centrage complet du site --*/
     
 }
 
-.logo_ohmyfood {
+.logo_ohmyfood
+{
     align-content: center;
-    
+    text-align: center;
 }
 
-h1 h2 { 
-    font-family: roboto;
-    font-size: 1em;
-} 
+h1
+{ 
+    font: {
+        size: $font-size-big;
+        family: $font-family-title;
+    } 
+    text-align: center;
+    padding: 10px 20px 0 20px;
+}
+p
+{
+    font-family: $font-family-title;
+    font-size: $font-size-small;
+    text-align: center;
+}
+
+
+
 
 
