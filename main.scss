@@ -31,6 +31,7 @@ body{
 
 #bloc_page{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     max-width: 1440px; 
     width: 100%;
