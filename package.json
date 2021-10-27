@@ -4,8 +4,16 @@
   "description": "p3_clech_frederic",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./main.scss:./style.css"
+    "sass": "sass --watch ./main.scss:./style.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfred22/FredericClech_3_27102021.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cfred22/FredericClech_3_27102021/issues"
+  },
+  "homepage": "https://github.com/cfred22/FredericClech_3_27102021#readme"
 }
