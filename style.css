@@ -3,6 +3,8 @@
 *, *:before, *:after {
   box-sizing: border-box;
   /*- résoudre pbm padding & marging pour calcul des box et des % par exemple-*/
+  text-decoration: none;
+  border: none;
 }
 
 body {
@@ -33,7 +35,8 @@ body {
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
-  box-shadow: 0px 10px 10px -10px #d5d5d5 inset;
+  box-shadow: 0px 10px 10px -10px #cfcfcf inset;
+  padding-top: 20px;
 }
 
 h1 {
@@ -47,6 +50,40 @@ p {
   font-size: 1.2em;
   font-family: "roboto";
   text-align: center;
+}
+
+#central_main {
+  background-color: white;
+}
+
+.function {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.function .function__button {
+  color: black;
+  display: flex;
+  align-items: baseline;
+  width: 85%;
+  max-width: 400px;
+  justify-content: space-between;
+  padding: 0;
+  border-radius: 30px;
+  outline: none;
+}
+.function .function__button .function__button__number {
+  color: white;
+  border-radius: 50%;
+  background: #9356DC;
+}
+.function .function__button .function__button__number + .fa-mobile-alt {
+  font-size: 1.5em;
+}
+
+.function p {
+  padding: 0 8% 0 8%;
 }
 
 /*# sourceMappingURL=style.css.map */

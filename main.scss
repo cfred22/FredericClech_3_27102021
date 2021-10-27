@@ -3,6 +3,8 @@
 *, *:before, *:after   /*-- box-sizing pour gérer les dimensions  --*/
 {
     box-sizing: border-box;  /*- résoudre pbm padding & marging pour calcul des box et des % par exemple-*/
+    text-decoration: none; 
+    border: none;
 }
 
 $color-primary: #9356DC;
@@ -11,6 +13,7 @@ $color-tertiary: #99E2D0;
 $color-darkgrey: #eaeaea;
 $color-softgrey: #f6f6f6;
 $color-bloc: white;
+$color-picto: black;
 
 
 $font-family-title: 'roboto';
@@ -49,7 +52,9 @@ body{
     display: flex;
     justify-content: center;
     background-color: $color-darkgrey;
-    box-shadow: 0px 10px 10px -10px #d5d5d5 inset;
+    box-shadow: 0px 10px 10px -10px #cfcfcf inset;
+    padding-top: 20px;
+   
  }
  
 
@@ -68,6 +73,44 @@ p {
         family: $font-family-title;
     } 
     text-align: center;
+}
+#central_main {
+    background-color: $color-bloc;
+
+}
+
+
+.function {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    background-color: $color-bloc;   
+    .function__button {
+        color: $color-picto; 
+        display: flex;
+        align-items: baseline;
+        width: 85%;
+        max-width: 400px;;
+        justify-content: space-between;
+        padding: 0;
+        border-radius: 30px;  
+        outline: none;      
+        .function__button__number {
+            color: $color-bloc;
+            border-radius: 50%;
+            background: $color-primary;
+            +.fa-mobile-alt {
+                font-size: 1.5em;
+            }
+            
+        }
+    }
+
+}
+
+.function p
+{
+    padding: 0 8% 0 8%;
 }
 
 
