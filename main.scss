@@ -9,25 +9,24 @@ $color-tertiary: #99E2D0;
     box-sizing: border-box;  /*- résoudre pbm padding & marging pour calcul des box et des % par exemple-*/
 }
 
-#bloc_page
-{
+#bloc_page {
     display: flex;
-    align-content: center;
+    justify-content: center;
     max-width: 1440px; 
     width: 100%;
     padding: 0 50px 0 50px; 
     margin: auto;     /*-- centrage complet du site --*/
+    
 }
 
-.logo_ohmyfood
-{
-  align-content: center;
+.logo_ohmyfood {
+    align-content: center;
+    
 }
 
-
-
-h1{ 
-    font-family: shrikhand;
-    font-size: 0.5em;
+h1 h2 { 
+    font-family: roboto;
+    font-size: 1em;
 } 
+
 
