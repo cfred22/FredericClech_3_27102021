@@ -7,6 +7,53 @@
   border: none;
 }
 
+/*-- COLOR --*/
+/*-- FONTES--*/
+/*-- 
+.spinner {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.spinner:after {
+  animation: changeContent .8s linear infinite;
+  display: block;
+  content: "⠋";
+  font-size: 80px;
+}
+--*/
+@keyframes changeContent {
+  10% {
+    content: "⠙";
+  }
+  20% {
+    content: "⠹";
+  }
+  30% {
+    content: "⠸";
+  }
+  40% {
+    content: "⠼";
+  }
+  50% {
+    content: "⠴";
+  }
+  60% {
+    content: "⠦";
+  }
+  70% {
+    content: "⠧";
+  }
+  80% {
+    content: "⠇";
+  }
+  90% {
+    content: "⠏";
+  }
+}
 body {
   margin: 0;
   background-color: #eaeaea;
@@ -19,7 +66,7 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: auto;
-  /*-- centrage complet du site --*/
+  /* <-- centrage complet du site */
 }
 
 .logo {
@@ -29,6 +76,11 @@ body {
   align-content: center;
   text-align: center;
   padding: 20px;
+  color: black;
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 2em;
+  font-family: "Shrikhand";
 }
 
 .search {
@@ -36,54 +88,61 @@ body {
   justify-content: center;
   background-color: #eaeaea;
   box-shadow: 0px 10px 10px -10px #cfcfcf inset;
-  padding-top: 20px;
+  padding: 20px 0 20px 40px;
+}
+.search input {
+  background-color: #eaeaea;
+}
+.search .search__space {
+  padding-left: 3px;
+  margin-left: 10px;
+  font-size: 1em;
 }
 
-h1 {
-  font-size: 1.8em;
+/*-- INTRO --*/
+.intro {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  background-color: #f6f6f6;
+}
+.intro h1 {
+  font-size: 1.5em;
   font-family: "roboto";
   text-align: center;
-  padding: 10px 20px 0 20px;
+  padding: 10px 50px 0 50px;
 }
-
-p {
+.intro p {
+  font-family: "roboto";
   font-size: 1.2em;
-  font-family: "roboto";
+  font-weight: lighter;
   text-align: center;
+  margin-top: 0;
+}
+.intro .intro__btn {
+  font-size: 1em;
+  font-family: "roboto";
+  color: white;
+  box-shadow: 0px 10px 10px -10px #cfcfcf;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  width: 60%;
+  height: 50px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
-#central_main {
+/*-- CENTRAL FONCTIONNEMENT--*/
+#function_central {
   background-color: white;
+}
+#function_central h2 {
+  font-size: 1.5em;
+  font-family: "roboto";
+  padding-left: 15px;
 }
 
 .function {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  background-color: white;
-}
-.function .function__button {
-  color: black;
-  display: flex;
-  align-items: baseline;
-  width: 85%;
-  max-width: 400px;
-  justify-content: space-between;
-  padding: 0;
-  border-radius: 30px;
-  outline: none;
-}
-.function .function__button .function__button__number {
-  color: white;
-  border-radius: 50%;
-  background: #9356DC;
-}
-.function .function__button .function__button__number + .fa-mobile-alt {
-  font-size: 1.5em;
-}
-
-.function p {
-  padding: 0 8% 0 8%;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */

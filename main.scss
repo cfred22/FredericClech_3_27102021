@@ -6,25 +6,56 @@
     text-decoration: none; 
     border: none;
 }
-
+/*-- COLOR --*/
+$color-picto: black;
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-darkgrey: #eaeaea;
 $color-softgrey: #f6f6f6;
 $color-bloc: white;
-$color-picto: black;
-
-
+/*-- FONTES--*/
 $font-family-title: 'roboto';
-$font-size-regular: 1.4em;
+$font-family-logo: 'Shrikhand';
+$font-size-regular: 1.5em;
 $font-size-small: 1.2em;
-$font-size-big: 1.8em;
+$font-size-xsmall: 1em;
+$font-size-big: 2em;
 
 // centrage Version mixin
 @mixin center() {
     align-content: center;
     text-align: center;
+}
+
+/*-- 
+.spinner {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.spinner:after {
+  animation: changeContent .8s linear infinite;
+  display: block;
+  content: "⠋";
+  font-size: 80px;
+}
+--*/
+
+
+@keyframes changeContent {
+  10% { content: "⠙"; }
+  20% { content: "⠹"; }
+  30% { content: "⠸"; }
+  40% { content: "⠼"; }
+  50% { content: "⠴"; }
+  60% { content: "⠦"; }
+  70% { content: "⠧"; }
+  80% { content: "⠇"; }
+  90% { content: "⠏"; }
 }
 
 body{
@@ -38,7 +69,7 @@ body{
     justify-content: center;
     max-width: 1440px; 
     width: 100%;
-    margin: auto;        /*-- centrage complet du site --*/
+    margin: auto;/* <-- centrage complet du site */
 }    
 
 .logo {
@@ -46,6 +77,13 @@ body{
     .logo__ohmyfood {
         @include center();
         padding: 20px;
+        color: $color-picto;
+        margin: 0;
+        letter-spacing: 1px;
+        font: {
+            size: $font-size-big;
+            family: $font-family-logo;
+        }
     }
 }
  .search {
@@ -53,65 +91,80 @@ body{
     justify-content: center;
     background-color: $color-darkgrey;
     box-shadow: 0px 10px 10px -10px #cfcfcf inset;
-    padding-top: 20px;
-   
- }
- 
-
-h1 { 
-    font: {
-        size: $font-size-big;
-        family: $font-family-title;
-    } 
-    text-align: center;
-    padding: 10px 20px 0 20px;
-}
-
-p {
-    font: {
-        size: $font-size-small;
-        family: $font-family-title;
-    } 
-    text-align: center;
-}
-#central_main {
-    background-color: $color-bloc;
-
-}
-
-
-.function {
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-    background-color: $color-bloc;   
-    .function__button {
-        color: $color-picto; 
-        display: flex;
-        align-items: baseline;
-        width: 85%;
-        max-width: 400px;;
-        justify-content: space-between;
-        padding: 0;
-        border-radius: 30px;  
-        outline: none;      
-        .function__button__number {
-            color: $color-bloc;
-            border-radius: 50%;
-            background: $color-primary;
-            +.fa-mobile-alt {
-                font-size: 1.5em;
-            }
-            
-        }
+    padding: 20px 0 20px 40px;
+    
+    input {
+        background-color: $color-darkgrey;
     }
+    .search__space {
+        padding-left: 3px;
+        margin-left: 10px;
+        font-size: $font-size-xsmall;
+    }
+ }
+
+/*-- INTRO --*/
+ .intro {
+     flex-direction: column;
+     align-items: center;
+     display: flex;
+     background-color: $color-softgrey;
+     h1 { 
+        font: {
+            size: $font-size-regular;
+            family: $font-family-title;
+        } 
+        text-align: center;
+        padding: 10px 50px 0 50px;        
+    }
+    p {
+        font: {
+            family: $font-family-title;   
+            size: $font-size-small;
+            weight: lighter;           
+        }
+        text-align: center;
+        margin-top: 0;
+    }
+    .intro__btn {
+        font: {
+            size: $font-size-xsmall;
+            family: $font-family-title;
+        } 
+        color: $color-bloc;
+        box-shadow: 0px 10px 10px -10px #cfcfcf;
+        border-radius: 25px;
+        margin-bottom: 40px;
+        width: 60%;
+        height: 50px;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+
+    }
+ }
+/*-- CENTRAL FONCTIONNEMENT--*/
+#function_central {
+    background-color: $color-bloc;
+    h2 {
+        font: {
+            size: $font-size-regular;
+            family: $font-family-title;
+        }
+        padding-left: 15px;
+    }
+}
+.function {
+    justify-content: space-around;
+
 
 }
 
-.function p
-{
-    padding: 0 8% 0 8%;
-}
+
+
+
+
+
+
+
 
 
 
