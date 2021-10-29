@@ -1,0 +1,42 @@
+// SPINNER INTRO 
+.spinner {
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    animation: cssAnimation 0s ease-in 5s forwards;
+    opacity: 1;
+    background: rgba(147, 86, 220, 0.5);
+}
+
+@keyframes cssAnimation {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        min-height: 0%;
+        font-size: 0.1px;
+    }
+}
+  
+.spinner:after {
+    animation: changeContent .8s linear infinite ;
+    display: block;
+    content: "⠋";
+    font-size: 80px;
+}
+
+  
+  
+  @keyframes changeContent {
+    10% { content: "⠙"; }
+    20% { content: "⠹"; }
+    30% { content: "⠸"; }
+    40% { content: "⠼"; }
+    50% { content: "⠴"; }
+    60% { content: "⠦"; }
+    70% { content: "⠧"; }
+    80% { content: "⠇"; }
+    90% { content: "⠏"; }
+  }
+  
