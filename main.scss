@@ -35,7 +35,7 @@ body{
     background-color: $color-bloc;
     .logo__ohmyfood {
         @include center();
-        padding: 20px;
+        padding-top: 20px;
         color: $color-picto;
         margin: 0;
         letter-spacing: 1px;
@@ -49,8 +49,9 @@ body{
     display: flex;
     justify-content: center;
     background-color: $color-darkgrey;
+    align-items: baseline;
     box-shadow: 0px 10px 10px -10px #cfcfcf inset;
-    padding: 20px 0 20px 40px;
+    padding: 20px 20px 20px 60px;
     
     input {
         background-color: $color-darkgrey;
