@@ -141,18 +141,7 @@ body {
   font-size: 1.2em;
   padding-left: 35px;
 }
-#function_central .function .function__button .function__button_in .fa-mobile-alt {
-  font-size: 1.5em;
-  color: #5c5c5c;
-  padding-left: 35px;
-}
-#function_central .function .function__button .function__button_in .fa-list-ul {
-  font-size: 1.5em;
-  color: #5c5c5c;
-  padding-left: 35px;
-}
-#function_central .function .function__button .function__button_in .fa-store {
-  font-size: 1.5em;
+#function_central .function .function__button .function__button_in i.fas {
   color: #5c5c5c;
   padding-left: 35px;
 }

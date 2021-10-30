@@ -124,21 +124,8 @@ body{
             }
             .function__button_in {
                 @include function-button-in();
-
-                .fa-mobile-alt {
-                    font-size: $font-size-regular;
-                    color: rgb(92, 92, 92);
-                    padding-left: 35px;
-                }
-                .fa-list-ul {
-                    font-size: $font-size-regular;
-                    color: rgb(92, 92, 92);
-                    padding-left: 35px;
-                }
-                .fa-store {
-                    font-size: $font-size-regular;
-                    color: rgb(92, 92, 92);
-                    padding-left: 35px;
+                i.fas {
+                    @include icons-function();
                 }
             }
         }

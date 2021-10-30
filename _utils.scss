@@ -65,6 +65,11 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
     }
 }
 
+@mixin icons-function() {         // <- fas icon menu
+    color: rgb(92, 92, 92);
+    padding-left: 35px;
+}
+
 
 
 
