@@ -51,7 +51,7 @@ body{
     background-color: $color-darkgrey;
     align-items: center;
     box-shadow: 0px 10px 10px -10px #cfcfcf inset;
-    padding: 20px 20px 20px 80px;
+    padding: 20px 0 20px 40px;
     
     input {
         background-color: $color-darkgrey;
@@ -92,7 +92,7 @@ body{
             family: $font-family-title;
         } 
         color: $color-bloc;
-        box-shadow: 0px 10px 10px -10px #cfcfcf;
+        box-shadow: 0px 10px 10px -10px #b4b4b4;
         border-radius: 25px;
         margin-bottom: 40px;
         width: 60%;
@@ -111,52 +111,39 @@ body{
         padding-left: 15px;
         margin-top: 40px;
     }
-    .function {
+    .function {     // BOUTONS FONCTIONNEMENT 1; 2; 3
         justify-content: center;
         display: flex;
         .function__button {
-            width: 85%;
-            height: 70px;
-            justify-content: center;
-            border-radius: 22px;
-            position: relative;
+            @include buttonfun-type();
+            margin-bottom: 30px;
             @include box-shadow();
-            transition-duration: 0.4s;
-            &.function__button:hover {
-                background-color: #e4ddfd;
-                .fa-mobile-alt{
-                    color: $color-primary;
-                } 
-                
-            }
-
+            @include buttonfun-hover();
             .function__number {
-                position: absolute;
-                border-radius: 50%;
-                background-color: $color-primary;
-                color: $color-bloc;
-                height: 24px;
-                width: 24px;
-                line-height: 26px;
-                left: -10px;
-                bottom: 26px;
+                @include function-number();
             }
             .function__button_in {
-                display: flex;
-                justify-content: space-around;
-                align-items: baseline;
+                @include function-button-in();
+
                 .fa-mobile-alt {
                     font-size: $font-size-regular;
                     color: rgb(92, 92, 92);
-                    padding-left: 15px;                    }
-                p {
-                    font-size: $font-size-small;
-                    padding-right: 35px;
+                    padding-left: 35px;
+                }
+                .fa-list-ul {
+                    font-size: $font-size-regular;
+                    color: rgb(92, 92, 92);
+                    padding-left: 35px;
+                }
+                .fa-store {
+                    font-size: $font-size-regular;
+                    color: rgb(92, 92, 92);
+                    padding-left: 35px;
                 }
             }
         }
+        
     }
-
 }
 
 
