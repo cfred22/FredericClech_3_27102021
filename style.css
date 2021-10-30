@@ -104,6 +104,7 @@ body {
 #function_central .function .function__button {
   min-width: 85%;
   height: 70px;
+  background: #f6f6f6;
   align-content: center;
   text-align: center;
   justify-content: center;
@@ -136,6 +137,7 @@ body {
   display: flex;
   justify-content: flex start;
   align-items: baseline;
+  background: #f6f6f6;
 }
 #function_central .function .function__button .function__button_in p {
   font-size: 1.2em;

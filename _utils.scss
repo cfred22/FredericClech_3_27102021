@@ -24,6 +24,7 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
 @mixin buttonfun-type() {   // <- bouton TYPE 
     min-width: 85%;
     height: 70px;
+    background: $color-softgrey;
     align-content: center;
     text-align: center;
     justify-content: center;
@@ -59,6 +60,7 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
     display: flex;
     justify-content: flex start;
     align-items: baseline;
+    background: $color-softgrey;
     p {
         font-size: $font-size-small;
         padding-left: 35px;
