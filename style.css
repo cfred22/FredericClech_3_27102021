@@ -9,9 +9,54 @@
 
 /*-- COLOR --*/
 /*-- FONTES--*/
+.spinner {
+  border-top: 10px solid #FF79DA;
+  border-bottom: 10px solid #99E2D0;
+  border-radius: 50%;
+  display: flex;
+  width: 125px;
+  height: 125px;
+  margin: auto;
+  animation: spin 1.2s linear infinite;
+  position: absolute;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.spinner p {
+  animation: spin2 1.2s linear infinite;
+  color: #FF79DA;
+  color: black;
+  border-radius: 50%;
+  font-size: 40px;
+  font-family: "Shrikhand";
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
   background-color: #eaeaea;
+  z-index: 1;
 }
 
 #bloc_page {
@@ -110,7 +155,6 @@ body {
   justify-content: center;
   border-radius: 22px;
   justify-content: center;
-  border-radius: 22px;
   position: relative;
   margin-bottom: 30px;
   box-shadow: 0px 10px 10px -10px #b4b4b4;
@@ -137,7 +181,6 @@ body {
   display: flex;
   justify-content: flex start;
   align-items: baseline;
-  background: #f6f6f6;
 }
 #function_central .function .function__button .function__button_in p {
   font-size: 1.2em;
@@ -146,6 +189,7 @@ body {
 #function_central .function .function__button .function__button_in i.fas {
   color: #5c5c5c;
   padding-left: 35px;
+  font-size: large;
 }
 
 /*# sourceMappingURL=style.css.map */

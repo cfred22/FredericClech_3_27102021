@@ -14,12 +14,13 @@
 @import "base";
 
 // importation du fichier _spinner.scss
-//@import "spinner";   
+@import "spinner";   
 
 
 body{
     margin: 0;
     background-color: $color-darkgrey;
+    z-index: 1;
 }
 
 #bloc_page{
