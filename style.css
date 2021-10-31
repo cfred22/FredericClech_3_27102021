@@ -30,11 +30,12 @@
 }
 .spinner p {
   animation: spin2 1.2s linear infinite;
-  color: #FF79DA;
-  color: black;
+  color: #f5edff;
+  text-shadow: 1px 1px 2px dimgray;
+  opacity: 0.92;
   border-radius: 50%;
-  font-size: 40px;
   font-family: "Shrikhand";
+  font-size: 2em;
 }
 
 @keyframes spin {
@@ -46,7 +47,7 @@
   }
 }
 @keyframes spin2 {
-  0% {
+  100% {
     transform: rotate(0deg);
   }
   0% {
