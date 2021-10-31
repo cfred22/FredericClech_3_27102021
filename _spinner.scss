@@ -12,10 +12,10 @@
     justify-content: space-evenly;
     align-items: center;
     top: 0; left:0; right:0; bottom: 0;
-    z-index: 2;
+    z-index: -1000;
     pointer-events: none;
     opacity: 1;
-        
+            
     p {
         animation: spin2 1.2s linear infinite;  // ROTAION 3S LINEAIRE INFINI
         color: $color-hoverfun;
@@ -30,7 +30,8 @@
     }
 }
 .fadeout {
-    animation: fadeout ease 3s;
+    animation: fadeout ease 4s;
+    z-index: 1000;
  
 }
  
@@ -58,11 +59,9 @@
 @keyframes fadeout {
     100% {
       opacity:0;
-      display: flex;
     }
     0% {
       opacity:1;
-      display: none;
     }
   }
 
