@@ -27,12 +27,13 @@
   bottom: 0;
   z-index: 2;
   pointer-events: none;
+  opacity: 1;
 }
 .spinner p {
   animation: spin2 1.2s linear infinite;
   color: #f5edff;
   text-shadow: 1px 1px 2px dimgray;
-  opacity: 0.92;
+  opacity: 1;
   border-radius: 50%;
   font-family: "Shrikhand";
   font-size: 2em;
@@ -54,6 +55,11 @@
     transform: rotate(360deg);
   }
 }
+.spinner::after {
+  opacity: 0;
+  visibility: hidden;
+}
+
 body {
   margin: 0;
   background-color: #eaeaea;
