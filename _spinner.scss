@@ -15,7 +15,7 @@
     z-index: 2;
     pointer-events: none;
     opacity: 1;
-    
+        
     p {
         animation: spin2 1.2s linear infinite;  // ROTAION 3S LINEAIRE INFINI
         color: $color-hoverfun;
@@ -28,15 +28,20 @@
             
         }
     }
-
+}
+.fadeout {
+    animation: fadeout ease 3s;
+ 
 }
  
 @keyframes spin {  
     0% {
-        transform: rotate(0deg)
+        transform: rotate(0deg);
+        display: flex;
     }
     100% {
-        transform: rotate(360deg) ;
+        transform: rotate(360deg);
+        display: none;
     }
 }
 
@@ -50,9 +55,15 @@
     }
 }
 
-.spinner::after {
+@keyframes fadeout {
+    100% {
+      opacity:0;
+      display: flex;
+    }
+    0% {
+      opacity:1;
+      display: none;
+    }
+  }
 
-    opacity: 0;
-    visibility: hidden;
 
-}

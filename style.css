@@ -39,12 +39,18 @@
   font-size: 2em;
 }
 
+.fadeout {
+  animation: fadeout ease 3s;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
+    display: flex;
   }
   100% {
     transform: rotate(360deg);
+    display: none;
   }
 }
 @keyframes spin2 {
@@ -55,11 +61,16 @@
     transform: rotate(360deg);
   }
 }
-.spinner::after {
-  opacity: 0;
-  visibility: hidden;
+@keyframes fadeout {
+  100% {
+    opacity: 0;
+    display: flex;
+  }
+  0% {
+    opacity: 1;
+    display: none;
+  }
 }
-
 body {
   margin: 0;
   background-color: #eaeaea;
