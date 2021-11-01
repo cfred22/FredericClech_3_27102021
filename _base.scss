@@ -1,4 +1,11 @@
+/*--- BASE GÉNÉRALE DU SITE ----*/
 
+*, *:before, *:after   /*-- box-sizing pour gérer les dimensions  --*/
+{
+    box-sizing: border-box;  /*- résoudre pbm padding & marging pour calcul des box et des % par exemple-*/
+    text-decoration: none; 
+    border: none;
+}
 
 /*-- FONTES--*/
 $font-family-title: 'roboto';

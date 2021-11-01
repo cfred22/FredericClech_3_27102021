@@ -1,11 +1,3 @@
-/*--- BASE GÉNÉRALE DU SITE ----*/
-
-*, *:before, *:after   /*-- box-sizing pour gérer les dimensions  --*/
-{
-    box-sizing: border-box;  /*- résoudre pbm padding & marging pour calcul des box et des % par exemple-*/
-    text-decoration: none; 
-    border: none;
-}
 
 // importation du fichier _utils.scss
 @import "utils";
@@ -16,92 +8,93 @@
 // importation du fichier _spinner.scss
 @import "spinner";   
 
-
+//BODY + bloc-page
 body{
     margin: 0;
     background-color: $color-darkgrey;
     z-index: 1;
+    #bloc_page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1440px; 
+        width: 100%;
+        margin: auto;/* <-- centrage complet du site */
+    } 
 }
 
-#bloc_page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1440px; 
-    width: 100%;
-    margin: auto;/* <-- centrage complet du site */
-}    
-
-.logo {
-    background-color: $color-bloc;
-    .logo__ohmyfood {
-        @include center();
-        padding-top: 20px;
-        color: $color-picto;
-        margin: 0;
-        letter-spacing: 1px;
-        font: {
-            size: $font-size-big;
-            family: $font-family-logo;
+//HEADER (titre + search-space + menu-intro)  
+header {
+    .logo {
+        background-color: $color-bloc;
+        .logo__ohmyfood {
+            @include center();
+            padding-top: 20px;
+            color: $color-picto;
+            margin: 0;
+            letter-spacing: 1px;
+            font: {
+                size: $font-size-big;
+                family: $font-family-logo;
+            }
         }
     }
-}
- .search {
-    display: flex;
-    justify-content: center;
-    background-color: $color-darkgrey;
-    align-items: center;
-    box-shadow: 0px 10px 10px -10px #cfcfcf inset;
-    padding: 20px 0 20px 40px;
-    
-    input {
+     .search {
+        display: flex;
+        justify-content: center;
         background-color: $color-darkgrey;
-    }
-    .search__space {
-        padding-left: 3px;
-        margin-left: 10px;
-        font-size: $font-size-xsmall;
-    }
- }
-
-/*-- INTRO --*/
- .intro {
-     flex-direction: column;
-     align-items: center;
-     display: flex;
-     background-color: $color-softgrey;
-     h1 { 
-        font: {
-            size: $font-size-regular;
-            family: $font-family-title;
-        } 
-        text-align: center;
-        padding: 10px 50px 0 50px;        
-    }
-    p {
-        font: {
-            family: $font-family-title;   
-            size: $font-size-small;
-            weight: lighter;           
+        align-items: center;
+        box-shadow: 0px 10px 10px -10px #cfcfcf inset;
+        padding: 20px 0 20px 40px;
+        
+        input {
+            background-color: $color-darkgrey;
         }
-        text-align: center;
-        margin-top: 0;
+        .search__space {
+            padding-left: 3px;
+            margin-left: 10px;
+            font-size: $font-size-xsmall;
+        }
     }
-    .intro__btn {
-        font: {
-            size: $font-size-xsmall;
-            family: $font-family-title;
-        } 
-        color: $color-bloc;
-        box-shadow: 0px 10px 10px -10px #b4b4b4;
-        border-radius: 25px;
-        margin-bottom: 40px;
-        width: 60%;
-        height: 50px;
-        background: $color-gradient;
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        background-color: $color-softgrey;
+        h1 { 
+           font: {
+               size: $font-size-regular;
+               family: $font-family-title;
+           } 
+           text-align: center;
+           padding: 10px 50px 0 50px;        
+       }
+       p {
+           font: {
+               family: $font-family-title;   
+               size: $font-size-small;
+               weight: lighter;           
+           }
+           text-align: center;
+           margin-top: 0;
+       }
+       .intro__btn {
+           font: {
+               size: $font-size-xsmall;
+               family: $font-family-title;
+           } 
+           color: $color-bloc;
+           box-shadow: 0px 10px 10px -10px #b4b4b4;
+           border-radius: 25px;
+           margin-bottom: 40px;
+           width: 60%;
+           height: 50px;
+           background: $color-gradient;
+       }
     }
- }
-/*-- CENTRAL FONCTIONNEMENT--*/
+}
+
+//-- CENTRAL FONCTIONNEMENT
 #function_central {
     background-color: $color-bloc;
     h2 {
@@ -133,6 +126,17 @@ body{
         
     }
 }
+
+//-- SECTION VIGNETTES
+
+
+
+
+
+
+
+
+//-- FOOTER
 
 
 
