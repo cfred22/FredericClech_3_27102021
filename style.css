@@ -203,4 +203,14 @@ header .intro .intro__btn {
   font-size: large;
 }
 
+#restaurants {
+  background-color: #f6f6f6;
+}
+#restaurants h2 {
+  font-size: 1.5em;
+  font-family: "roboto";
+  padding-left: 15px;
+  margin-top: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */

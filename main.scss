@@ -129,6 +129,18 @@ header {
 
 //-- SECTION VIGNETTES
 
+#restaurants {
+    background-color: $color-softgrey;
+    h2 {
+        font: {
+            size: $font-size-regular;
+            family: $font-family-title;
+        }
+        padding-left: 15px;
+        margin-top: 40px;
+    }
+}
+
 
 
 
