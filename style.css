@@ -213,4 +213,44 @@ header .intro .intro__btn {
   margin-top: 40px;
 }
 
+.restaurant__card {
+  padding: 23px;
+  align-content: center;
+}
+
+.restaurant__card__container .restaurant__card__img__block {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  max-height: 200px;
+  position: relative;
+}
+.restaurant__card__container .restaurant__card__img__block .restaurant__card__image {
+  object-fit: cover;
+  height: 170px;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant__card__container .restaurant__card__img__block .restaurant__card__new {
+  position: absolute;
+  text-align: center;
+  line-height: 0;
+  background-color: #99E2D0;
+  font-family: "roboto";
+  font-font-weight: 1000;
+  color: #0d795e;
+  height: 30px;
+  width: 80px;
+  right: 15px;
+  border-radius: 3px;
+  top: 10px;
+}
+.restaurant__card__container .restaurant__card__title {
+  font-weight: bold;
+  text-align: start;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 3px 3px #e1e1e1;
+  height: fit-content;
+  background: white;
+}
+
 /*# sourceMappingURL=style.css.map */
