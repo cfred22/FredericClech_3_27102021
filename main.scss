@@ -173,17 +173,15 @@ header {
             top: 10px;
         }
     }
-
     .restaurant__card__title {
-        font-weight: bold;
-        text-align: start;
-        border-radius: 0 0 15px 15px;
-        box-shadow: 0 3px 3px rgb(225 225 225);
-        height: fit-content;
-        background: $color-bloc;
+        display: flex;
+        justify-content: space-between;
+        
 
 
     }
+
+ 
 
 }
 

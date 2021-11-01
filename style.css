@@ -245,12 +245,8 @@ header .intro .intro__btn {
   top: 10px;
 }
 .restaurant__card__container .restaurant__card__title {
-  font-weight: bold;
-  text-align: start;
-  border-radius: 0 0 15px 15px;
-  box-shadow: 0 3px 3px #e1e1e1;
-  height: fit-content;
-  background: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
