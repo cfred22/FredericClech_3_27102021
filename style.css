@@ -9,7 +9,12 @@
 
 /*-- COLOR --*/
 /*-- FONTES--*/
-.spinner {
+.fade_out {
+  animation: fadeout ease-in-out 8s;
+  z-index: 2;
+  opacity: 0;
+}
+.fade_out .spinner {
   border-top: 10px solid #FF79DA;
   border-bottom: 10px solid #99E2D0;
   border-radius: 50%;
@@ -25,11 +30,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1000;
   pointer-events: none;
   opacity: 1;
 }
-.spinner p {
+.fade_out .spinner p {
   animation: spin2 1.2s linear infinite;
   color: #f5edff;
   text-shadow: 1px 1px 2px dimgray;
@@ -37,11 +41,6 @@
   border-radius: 50%;
   font-family: "Shrikhand";
   font-size: 2em;
-}
-
-.fadeout {
-  animation: fadeout ease 4s;
-  z-index: 1000;
 }
 
 @keyframes spin {
