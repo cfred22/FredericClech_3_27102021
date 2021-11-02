@@ -1,7 +1,7 @@
 // SPINNER INTRO 
 
 .fade_out {
-    animation: fadeout ease-in-out 8s;
+    animation: fadeout ease-in-out 3s;
     z-index: 2;
     opacity: 0;
     
@@ -13,7 +13,7 @@
         width: 125px;
         height: 125px;
         margin: auto;
-        animation: spin 1.2s linear infinite;  // ROTAION 3S LINEAIRE INFINI
+        animation: spin 1.2s linear infinite;  // ROTATION 3S LINEAIRE INFINI
         position: absolute;
         justify-content: space-evenly;
         align-items: center;
@@ -21,7 +21,7 @@
         pointer-events: none;
         opacity: 1;
         p {
-            animation: spin2 1.2s linear infinite;  // ROTAION 3S LINEAIRE INFINI
+            animation: spin2 1.2s linear infinite;  // ROTATION 3S LINEAIRE INFINI
             color: $color-hoverfun;
             text-shadow: 1px 1px 2px rgb(105, 105, 105);
             opacity: 1;
@@ -56,12 +56,28 @@
 }
 
 @keyframes fadeout {
-    100% {
-      opacity:0;
-    }
     0% {
       opacity:1;
     }
+    85% {
+      opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
   }
+
+@keyframes fadein {
+    0% {
+      opacity:0.05;
+    }
+    85% {
+        opacity:0.05;
+    }
+      100% {
+          opacity:1;
+    }
+}
+
 
 

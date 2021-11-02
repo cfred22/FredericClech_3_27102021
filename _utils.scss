@@ -34,7 +34,7 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
 }
 
 @mixin buttonfun-hover() {     // <-hover bouton fonctionnement
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     &.function__button:hover {
         background-color: $color-hoverfun;
         i.fas {

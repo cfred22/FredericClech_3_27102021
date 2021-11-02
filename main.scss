@@ -17,6 +17,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        animation: fadein ease 3s; 
         max-width: 1440px; 
         width: 100%;
         margin: auto;/* <-- centrage complet du site */
