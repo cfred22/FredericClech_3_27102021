@@ -95,7 +95,7 @@ header {
 }
 
 //-- CENTRAL FONCTIONNEMENT
-#function_central {
+#function__central {
     background-color: $color-bloc;
     h2 {
         font: {
@@ -108,7 +108,7 @@ header {
     .function {     // BOUTONS FONCTIONNEMENT * 1; 2; 3 *
         justify-content: center;
         display: flex;
-        .function__button {
+        &__button {
             @include buttonfun-type();
             margin-bottom: 30px;
             @include box-shadow();
@@ -116,7 +116,7 @@ header {
             .function__number {
                 @include function-number();
             }
-            .function__button_in {
+            .function__button-in {
                 @include function-button-in();
                 i.fas {
                     @include icons-function();
@@ -139,24 +139,24 @@ header {
         margin-top: 40px;
     }
 }
-.restaurant__card {
+.restau{
     padding: 23px;
     align-content: center;
 }
-.restaurant__card__container {
-    .restaurant__card__img__block {
+.restaurant {
+    &__block {
         display: flex;
         flex-direction: column;
         background-color: white;
         max-height: 200px;
         position: relative;
 
-        .restaurant__card__image {
+        .restaurant__image {
             object-fit: cover;
             height: 170px;
             border-radius: 15px 15px 0 0;
         }
-        .restaurant__card__new {
+        .restaurant__new {
             position: absolute;
             text-align: center;
             line-height: 0;
@@ -173,7 +173,7 @@ header {
             top: 10px;
         }
     }
-    .restaurant__card__title {
+    .rest {
         display: flex;
         justify-content: space-between;
         
