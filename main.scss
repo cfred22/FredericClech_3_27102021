@@ -30,9 +30,10 @@ header {
         background-color: $color-bloc;
         .logo__ohmyfood {
             @include center();
-            padding-top: 20px;
+            padding: 20px 0 8px 0;
             color: $color-picto;
             margin: 0;
+
             letter-spacing: 1px;
             font: {
                 size: $font-size-big;
@@ -98,6 +99,7 @@ header {
 //-- CENTRAL FONCTIONNEMENT
 #function__central {
     background-color: $color-bloc;
+    padding-bottom: 30px;
     h2 {
         font: {
             size: $font-size-regular;
@@ -124,7 +126,6 @@ header {
                 }
             }
         }
-        
     }
 }
 
@@ -136,28 +137,35 @@ header {
             size: $font-size-regular;
             family: $font-family-title;
         }
-        padding-left: 15px;
+        padding-left: 23px;
         margin-top: 40px;
+        margin-bottom: 5px;
     }
 }
-.restau{
+
+.restaurant {
     padding: 23px;
     align-content: center;
+    
 }
-.restaurant {
-    &__block {
+
+.restaurant__visual {
+    margin-bottom: 15px;
+    @include box-shadow();
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 20px;
+    .restaurant__block {
         display: flex;
         flex-direction: column;
         background-color: white;
         max-height: 200px;
         position: relative;
-
         .restaurant__image {
             object-fit: cover;
             height: 170px;
             border-radius: 15px 15px 0 0;
         }
-        .restaurant__new {
+        .restaurant__txt-overlay {
             position: absolute;
             text-align: center;
             line-height: 0;
@@ -174,16 +182,34 @@ header {
             top: 10px;
         }
     }
-    .rest {
+
+    .restaurant__description {
         display: flex;
         justify-content: space-between;
-        
+        .restaurant__info {
+            font-family: $font-family-title;
+            color: $color-picto;
+            .restaurant__name p {
+                margin: 10px 0 0 10px;
+                font: {
+                    size: $font-size-xsmall;
+                    weight: bolder;
+                }
+            }    
+            .restaurant__city p {
+                margin: 2px 0 0 10px;
+                font: {
+                    size: $font-size-xsmall;
+                    weight: lighter;
+                }
+            }    
+        }
+        .fa-heart {
+            margin: 10px 10px 0 10px;
+            color: $color-primary;
 
-
+        }
     }
-
- 
-
 }
 
 
