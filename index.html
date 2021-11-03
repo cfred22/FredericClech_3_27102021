@@ -1,178 +1,169 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<<<<<<< HEAD
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet" property="stylesheet" type="text/css">
-    <title>ohmyfood</title>
-    <!-- ROBOTO / SHRIKHAND FONTES GOOGLE / FONTAWESOME -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/78c94e52fa.js" crossorigin="anonymous"></script>   
-</head>
-<body>
-    <!-- ********* LOADER *********  -->
-    <div class="fade_out">
-        <div class="spinner">
-            <p>oh!</p>
-        </div>
-    </div>    
-
-    <div id="bloc_page">
- 
-
-        <!-- ********* HEADER (titre + search-space + menu-intro) *********  -->
-        <header> 
-            <div class="logo">
-                <a href="index.html"><h1 class="logo__ohmyfood">ohmyfood</h1></a>
-            </div>    
-            <div class="search">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" name="town" placeholder="Paris, Belleville" class="search__space">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" property="stylesheet" type="text/css">
+        <title>ohmyfood</title>
+        <!-- ROBOTO / SHRIKHAND FONTES GOOGLE / FONTAWESOME -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/78c94e52fa.js" crossorigin="anonymous"></script>   
+    </head>
+    <body>
+        <!-- ********* LOADER *********  -->
+        <div class="fade_out">
+            <div class="spinner">
+                <p>oh!</p>
             </div>
-            <div class="intro">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p> 
-                <button class="intro__btn" type="button">Explorer nos restaurants
-                </button>
-            </div>
-        </header>
+        </div>    
 
-        <!-- *********** CENTRAL FONCTIONNEMENT **********-->
-        <main id="function__central"> 
-            <h2 class="function__txt">Fonctionnement</h2>
-            
-            <div class="function">                
-                <button class="function__button">
-                    <div class="function__number">1</div>
-                    <span class="function__button-in">
-                        <span><i class="fas fa-mobile-alt"></i></span>
-                        <p>Choisissez un restaurant</p>
-                    </span>
-                </button> 
-            </div>
-            <div class="function">                
-                <button class="function__button">
-                    <div class="function__number">2</div>
-                    <span class="function__button-in">
-                        <span><i class="fas fa-list-ul"></i></span>
-                        <p>Composez votre menu</p>
-                    </span>
-                </button> 
-            </div>
-            <div class="function">                
-                <button class="function__button">
-                    <div class="function__number">3</div>
-                    <span class="function__button-in">
-                        <span><i class="fas fa-store"></i></span>
-                        <p>Dégustez au restaurant</p>
-                    </span>
-                </button> 
-            </div>
-        </main>
-
-        <!-- *********** SECTION VIGNETTES ***********-->
-        <section id="restaurants"> 
-            <h2 class="restaurants__txt">Restaurants</h2>
-
-
-
-            <div class="restaurant">
-                <a href="#">
-                    <div class="restaurant__visual">
-                        <div class="restaurant__block">
-                            <div class="restaurant__txt-overlay"><p>Nouveau</p></div>
-                            <img class="restaurant__image" src="images/restaurants/la_palette_du_gout.jpg" alt="la palette du gout">
-                        </div>
-                        
-                        <div class="restaurant__description">
-                            <div class="restaurant__info">
-                                <div class="restaurant__name"><p>La palette du goût</p></div>
-                                <div class="restaurant__city"><p>Ménilmontant</p></div> 
-                            </div>
-                            <div class="restaurant__card-heart">
-                                <i class="fas fa-heart"></i>                            
-                            </div>   
-                        </div> 
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="restaurant__visual">
-                        <div class="restaurant__block">
-                            <div class="restaurant__txt-overlay"><p>Nouveau</p></div>
-                            <img class="restaurant__image" src="images/restaurants/la_note_enchantée.jpg" alt="la palette du gout">
-                        </div>
-                        
-                        <div class="restaurant__description">
-                            <div class="restaurant__info">
-                                <div class="restaurant__name"><p>La note enchantée</p></div>
-                                <div class="restaurant__city"><p>Charonne</p></div> 
-                            </div>
-                            <div class="restaurant__card-heart">
-                                <i class="fas fa-heart"></i>                            
-                            </div>   
-                        </div> 
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="restaurant__visual">
-                        <div class="restaurant__block">
-                            <img class="restaurant__image" src="images/restaurants/à_la_francaise.jpg" alt="la palette du gout">
-                        </div>
-                        
-                        <div class="restaurant__description">
-                            <div class="restaurant__info">
-                                <div class="restaurant__name"><p>À la française</p></div>
-                                <div class="restaurant__city"><p>Cité Rouge</p></div> 
-                            </div>
-                            <div class="restaurant__card-heart">
-                                <i class="fas fa-heart"></i>                            
-                            </div>   
-                        </div> 
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="restaurant__visual">
-                        <div class="restaurant__block">
-                            <img class="restaurant__image" src="images/restaurants/le_délice_des_sens.jpg" alt="la palette du gout">
-                        </div>
-                        
-                        <div class="restaurant__description">
-                            <div class="restaurant__info">
-                                <div class="restaurant__name"><p>Le délice des sens</p></div>
-                                <div class="restaurant__city"><p>Folie-Méricourt</p></div> 
-                            </div>
-                            <div class="restaurant__card-heart">
-                                <i class="fas fa-heart"></i>                            
-                            </div>   
-                        </div> 
-                    </div>
-                </a>
-
-            </div>
-
-        </section>
-
-        <!-- *********** FOOTER ***********-->
-       <footer id="footer"> 
-       </footer>
-
-
-
-    </div>
-=======
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-</head>
-<body>
->>>>>>> main
+        <div id="bloc_page">
     
-</body>
+
+            <!-- ********* HEADER (titre + search-space + menu-intro) *********  -->
+            <header> 
+                <div class="logo">
+                    <a href="index.html"><h1 class="logo__ohmyfood">ohmyfood</h1></a>
+                </div>    
+                <div class="search">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" name="town" placeholder="Paris, Belleville" class="search__space">
+                </div>
+                <div class="intro">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p> 
+                    <button class="intro__btn" type="button">Explorer nos restaurants
+                    </button>
+                </div>
+            </header>
+
+            <!-- *********** CENTRAL FONCTIONNEMENT **********-->
+            <main id="function__central"> 
+                <h2 class="function__txt">Fonctionnement</h2>
+                
+                <div class="function">                
+                    <button class="function__button">
+                        <div class="function__number">1</div>
+                        <span class="function__button-in">
+                            <span><i class="fas fa-mobile-alt"></i></span>
+                            <p>Choisissez un restaurant</p>
+                        </span>
+                    </button> 
+                </div>
+                <div class="function">                
+                    <button class="function__button">
+                        <div class="function__number">2</div>
+                        <span class="function__button-in">
+                            <span><i class="fas fa-list-ul"></i></span>
+                            <p>Composez votre menu</p>
+                        </span>
+                    </button> 
+                </div>
+                <div class="function">                
+                    <button class="function__button">
+                        <div class="function__number">3</div>
+                        <span class="function__button-in">
+                            <span><i class="fas fa-store"></i></span>
+                            <p>Dégustez au restaurant</p>
+                        </span>
+                    </button> 
+                </div>
+            </main>
+
+            <!-- *********** SECTION VIGNETTES ***********-->
+            <section id="restaurants"> 
+                <h2 class="restaurants__txt">Restaurants</h2>
+
+
+
+                <div class="restaurant">
+                    <a href="#">
+                        <div class="restaurant__visual">
+                            <div class="restaurant__block">
+                                <div class="restaurant__txt-overlay"><p>Nouveau</p></div>
+                                <img class="restaurant__image" src="images/restaurants/la_palette_du_gout.jpg" alt="la palette du gout">
+                            </div>
+                            
+                            <div class="restaurant__description">
+                                <div class="restaurant__info">
+                                    <div class="restaurant__name"><p>La palette du goût</p></div>
+                                    <div class="restaurant__city"><p>Ménilmontant</p></div> 
+                                </div>
+                                <div class="restaurant__card-heart">
+                                    <i class="fas fa-heart"></i>                            
+                                </div>   
+                            </div> 
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="restaurant__visual">
+                            <div class="restaurant__block">
+                                <div class="restaurant__txt-overlay"><p>Nouveau</p></div>
+                                <img class="restaurant__image" src="images/restaurants/la_note_enchantée.jpg" alt="la palette du gout">
+                            </div>
+                            
+                            <div class="restaurant__description">
+                                <div class="restaurant__info">
+                                    <div class="restaurant__name"><p>La note enchantée</p></div>
+                                    <div class="restaurant__city"><p>Charonne</p></div> 
+                                </div>
+                                <div class="restaurant__card-heart">
+                                    <i class="fas fa-heart"></i>                            
+                                </div>   
+                            </div> 
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="restaurant__visual">
+                            <div class="restaurant__block">
+                                <img class="restaurant__image" src="images/restaurants/à_la_francaise.jpg" alt="la palette du gout">
+                            </div>
+                            
+                            <div class="restaurant__description">
+                                <div class="restaurant__info">
+                                    <div class="restaurant__name"><p>À la française</p></div>
+                                    <div class="restaurant__city"><p>Cité Rouge</p></div> 
+                                </div>
+                                <div class="restaurant__card-heart">
+                                    <i class="fas fa-heart"></i>                            
+                                </div>   
+                            </div> 
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="restaurant__visual">
+                            <div class="restaurant__block">
+                                <img class="restaurant__image" src="images/restaurants/le_délice_des_sens.jpg" alt="la palette du gout">
+                            </div>
+                            
+                            <div class="restaurant__description">
+                                <div class="restaurant__info">
+                                    <div class="restaurant__name"><p>Le délice des sens</p></div>
+                                    <div class="restaurant__city"><p>Folie-Méricourt</p></div> 
+                                </div>
+                                <div class="restaurant__card-heart">
+                                    <i class="fas fa-heart"></i>                            
+                                </div>   
+                            </div> 
+                        </div>
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- *********** FOOTER ***********-->
+        <footer id="footer"> 
+        </footer>
+
+
+
+        </div>
+        
+    </body>
 </html>
