@@ -6,6 +6,7 @@
   /*- résoudre pbm padding & marging pour calcul des box et des % par exemple-*/
   text-decoration: none;
   border: none;
+  list-style-type: none;
 }
 
 /*-- FONTES--*/
@@ -288,6 +289,45 @@ header .intro .intro__btn {
 .restaurant__visual .restaurant__description .fa-heart {
   margin: 10px 10px 0 10px;
   color: #9356DC;
+}
+
+#footer {
+  background-color: #353535;
+}
+#footer .footer_logo .logo__ohmyfood {
+  padding: 10px 0 8px 23px;
+  color: white;
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  font-family: "Shrikhand";
+}
+#footer .footer_more ul {
+  padding: 0 10px 0 23px;
+}
+#footer .footer_more ul li {
+  font-family: "roboto";
+  color: white;
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+#footer .footer_more ul li .fas {
+  margin-right: 10px;
+}
+#footer .footer_more ul li a {
+  color: white;
+}
+#footer .footer_more ul li a:hover {
+  color: #9356DC;
+}
+
+.logo {
+  display: flex;
+}
+.logo .fas {
+  align-content: space-between;
+  size: 2em;
+  margin: 20px 10px 0 23px;
 }
 
 /*# sourceMappingURL=style.css.map */

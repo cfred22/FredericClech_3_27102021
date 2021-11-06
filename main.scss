@@ -33,7 +33,6 @@ header {
             padding: 20px 0 8px 0;
             color: $color-picto;
             margin: 0;
-
             letter-spacing: 1px;
             font: {
                 size: $font-size-big;
@@ -213,6 +212,66 @@ header {
 }
 
 //-- FOOTER
+
+#footer {
+    background-color: $color-verydarkgrey;
+    .footer_logo {
+        .logo__ohmyfood {
+            padding: 10px 0 8px 23px;
+            color: $color-bloc;
+            margin: 0;
+            letter-spacing: 1px;
+            font: {
+                size: $font-size-small;
+                family: $font-family-logo;
+            }
+        }
+    }
+    .footer_more {
+        ul {
+            padding: 0 10px 0 23px;
+            li {
+                font-family: $font-family-title;
+                color: $color-bloc;
+                margin-bottom: 10px;
+                margin-right: 0; 
+                .fas {
+                    margin-right: 10px; 
+                }
+                a { 
+                    color: $color-bloc  
+                }
+                a:hover { 
+                    color: $color-primary;  
+                }   
+                
+              
+            }
+        }
+
+    }
+
+}
+
+// PAGE "LA PALETTE DU GOÛT" 
+
+.logo {
+    display: flex;
+    
+    .fas {
+        align-content: space-between;
+        size: $font-size-big;
+        margin: 20px 10px 0 23px; 
+
+
+
+    }
+    
+
+}
+
+
+
 
 
 
