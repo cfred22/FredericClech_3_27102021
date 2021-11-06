@@ -321,13 +321,10 @@ header .intro .intro__btn {
   color: #9356DC;
 }
 
-.logo {
-  display: flex;
-}
 .logo .fas {
   align-content: space-between;
   size: 2em;
-  margin: 20px 10px 0 23px;
+  margin: 20px 0 0 23px;
 }
 
 /*# sourceMappingURL=style.css.map */
