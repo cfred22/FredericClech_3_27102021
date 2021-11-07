@@ -5,7 +5,10 @@
     box-sizing: border-box;  /*- résoudre pbm padding & marging pour calcul des box et des % par exemple-*/
     text-decoration: none; 
     border: none;
-    list-style-type: none
+    list-style-type: none;
+    text-rendering: geometricPrecision;
+    
+    
 }
 
 /*-- FONTES--*/

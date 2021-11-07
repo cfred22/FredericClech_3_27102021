@@ -7,6 +7,7 @@
   text-decoration: none;
   border: none;
   list-style-type: none;
+  text-rendering: geometricPrecision;
 }
 
 /*-- FONTES--*/
@@ -36,7 +37,7 @@
 }
 .fade_out .spinner p {
   animation: spin2 1.2s linear infinite;
-  color: #f5edff;
+  color: white;
   text-shadow: 1px 1px 2px dimgray;
   opacity: 1;
   border-radius: 50%;
@@ -104,6 +105,7 @@ header .logo {
   background-color: white;
 }
 header .logo .logo__ohmyfood {
+  text-rendering: auto;
   align-content: center;
   text-align: center;
   padding: 20px 0 8px 0;
@@ -323,16 +325,17 @@ footer .footer__more ul li a:hover {
 
 .logo {
   display: flex;
-  align-content: space-around;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 .logo .fas {
   font-size: 1.5em;
-  position: absolute !important;
-  margin: 15px 80% 0 0;
+  margin: 15px 10% 0 0;
+  align-items: center;
   color: black;
+  position: absolute;
+  left: 5% !important;
 }
 
 .shot .shot__visual {
@@ -354,6 +357,7 @@ footer .footer__more ul li a:hover {
 }
 .shot .shot__visual .shot__block .shot__title {
   margin-left: 23px;
+  letter-spacing: 1px;
 }
 
 #meals .meals__starters {
@@ -362,7 +366,10 @@ footer .footer__more ul li a:hover {
 #meals .meals__starters .meals__title p {
   font-family: "roboto";
   font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
   margin-left: 23px;
+  padding: 0 0 5px 0;
+  width: 45px;
   text-transform: uppercase;
 }
 #meals .meals__container {
