@@ -262,7 +262,7 @@ footer {
     position: relative;
     .fas {
         font-size: $font-size-regular;
-        position: absolute;
+        position: absolute !important;
         margin: 15px 80% 0 0;   
         color: $color-picto;     
     }
