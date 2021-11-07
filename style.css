@@ -284,17 +284,17 @@ header .intro .intro__btn {
 .restaurant__visual .restaurant__description .restaurant__info .restaurant__city p {
   margin: 2px 0 0 10px;
   font-size: 1em;
-  font-weight: lighter;
+  font-weight: 300;
 }
 .restaurant__visual .restaurant__description .fa-heart {
   margin: 10px 10px 0 10px;
   color: #9356DC;
 }
 
-#footer {
+footer {
   background-color: #353535;
 }
-#footer .footer_logo .logo__ohmyfood {
+footer .footer__logo .footer__ohmyfood {
   padding: 10px 0 8px 23px;
   color: white;
   margin: 0;
@@ -302,29 +302,90 @@ header .intro .intro__btn {
   font-size: 1.2em;
   font-family: "Shrikhand";
 }
-#footer .footer_more ul {
+footer .footer__more ul {
   padding: 0 10px 0 23px;
 }
-#footer .footer_more ul li {
+footer .footer__more ul li {
   font-family: "roboto";
   color: white;
   margin-bottom: 10px;
   margin-right: 0;
 }
-#footer .footer_more ul li .fas {
+footer .footer__more ul li .fas {
   margin-right: 10px;
 }
-#footer .footer_more ul li a {
+footer .footer__more ul li a {
   color: white;
 }
-#footer .footer_more ul li a:hover {
+footer .footer__more ul li a:hover {
   color: #9356DC;
 }
 
+.logo {
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 .logo .fas {
-  align-content: space-between;
-  size: 2em;
-  margin: 20px 0 0 23px;
+  font-size: 1.5em;
+  position: absolute;
+  margin: 15px 80% 0 0;
+  color: black;
+}
+
+.shot .shot__visual {
+  background-color: white;
+  position: relative;
+}
+.shot .shot__visual .shot__block .shot__image {
+  object-fit: cover;
+  height: 280px;
+  width: 100%;
+}
+.shot .shot__visual .shot__block .shot__name {
+  font-family: "Shrikhand";
+  border-radius: 35px 35px 0 0;
+  position: absolute;
+  background: #f6f6f6;
+  width: 100%;
+  top: 74%;
+}
+.shot .shot__visual .shot__block .shot__title {
+  margin-left: 23px;
+}
+
+#meals .meals__starters {
+  min-height: 40px;
+}
+#meals .meals__starters .meals__title p {
+  font-family: "roboto";
+  font-weight: 300;
+  margin-left: 23px;
+  text-transform: uppercase;
+}
+#meals .meals__container {
+  box-shadow: 0px 10px 10px -10px #b4b4b4;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 20px;
+  margin: 0 23px 0 23px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+#meals .meals__container .meals__description {
+  font-family: "roboto";
+}
+#meals .meals__container .meals__description .meals__typo-normal {
+  font-weight: 500;
+  font-size: 1.2em;
+  margin: 0;
+}
+#meals .meals__container .meals__description .meals__typo-light {
+  font-weight: 300;
+  margin: 5px 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

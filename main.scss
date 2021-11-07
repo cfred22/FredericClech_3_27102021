@@ -13,7 +13,7 @@ body{
     margin: 0;
     background-color: $color-darkgrey;
     z-index: 1;
-    #bloc_page{
+    #bloc_page {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -199,7 +199,7 @@ header {
                 margin: 2px 0 0 10px;
                 font: {
                     size: $font-size-xsmall;
-                    weight: lighter;
+                    weight: 300;
                 }
             }    
         }
@@ -213,10 +213,10 @@ header {
 
 //-- FOOTER
 
-#footer {
+footer {
     background-color: $color-verydarkgrey;
-    .footer_logo {
-        .logo__ohmyfood {
+    .footer__logo {
+        .footer__ohmyfood {
             padding: 10px 0 8px 23px;
             color: $color-bloc;
             margin: 0;
@@ -227,7 +227,7 @@ header {
             }
         }
     }
-    .footer_more {
+    .footer__more {
         ul {
             padding: 0 10px 0 23px;
             li {
@@ -244,8 +244,6 @@ header {
                 a:hover { 
                     color: $color-primary;  
                 }   
-                
-              
             }
         }
 
@@ -255,20 +253,96 @@ header {
 
 // PAGE "LA PALETTE DU GOÛT" 
 
+
 .logo {
-    
-    
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     .fas {
-        align-content: space-between;
-        size: $font-size-big;
-        margin: 20px 0 0 23px; 
-
-
-
+        font-size: $font-size-regular;
+        position: absolute;
+        margin: 15px 80% 0 0;   
+        color: $color-picto;     
     }
-    
+}
+
+// photo & description restaurant
+.shot {
+
+    .shot__visual {
+        background-color: white;
+        position: relative;
+        .shot__block {   
+            .shot__image {
+                object-fit: cover;
+                height: 280px;
+                width: 100%;
+            }
+
+        .shot__name {
+            font-family: $font-family-logo;
+            border-radius: 35px 35px 0 0; 
+            position: absolute;
+            background: $color-softgrey;
+            width: 100%;
+            top: 74%;
+
+            }
+            .shot__title {
+                margin-left: 23px;
+
+            }
+        }
+    }
+}
+
+#meals {
+    .meals__starters {
+        min-height: 40px;
+        .meals__title {
+            p {
+                font: {
+                    family: $font-family-title;
+                    weight: 300;
+                }
+                margin-left: 23px;
+                text-transform: uppercase;
+
+            }
+            
+        }
+    }
+    .meals__container {
+        @include box-shadow();
+        @include center-bloc();
+        background: $color-bloc;
+        border-radius: 20px;
+        margin: 0 23px 0 23px;
+        padding: 10px;
+        margin-bottom: 15px;
+        .meals__description {
+            font-family: $font-family-title;
+            .meals__typo-normal {
+                font-weight: 500;
+                font-size: $font-size-small;
+                margin: 0;
+            }
+            .meals__typo-light {
+                font-weight: 300;
+                margin: 5px 0 0 0;
+            }
+
+
+        }
+    }
+        
 
 }
+
+
+
 
 
 
