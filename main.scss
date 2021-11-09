@@ -375,17 +375,25 @@ footer {
 
 .dish__validation {
     color: $color-bloc;
-    width: 55px;
+    width: 70px;
     background: $color-tertiary;
-    margin-right: -60px;                     // <-- margin "-" et width pour jouer sur la disparition 
+    margin-right: -70px;                     // <-- margin"-" et width pour jouer sur la disparition 
     transition: margin-right ease-in-out .2s;
+
     .fa-check-circle {
         font-size: $font-size-small;
+        rotate: (15°);
+        margin-top: 25px;
+        margin-left: 20px;
     }
 }
 
+// hover animation position droite vers gauche bet rotation
 .dish:hover .dish__validation {
-    margin-right: 0;                         // <-- margin "0" et width pour jouer sur la disparition 
+    margin-right: 0;                         // <-- margin"0" et width pour jouer sur la disparition 
+}
+.dish:hover .dish__validation .fas {
+    animation: rotate-check 1.1s;
 }
 
 

@@ -33,6 +33,22 @@
     transform: translateY(-12px);
   }
 }
+@-webkit-keyframes rotate-check {
+  from {
+    -webkit-transform: rotate-(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate-check {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
   background-color: #eaeaea;
@@ -363,17 +379,24 @@ footer .footer__more ul li a:hover {
 
 .dish__validation {
   color: white;
-  width: 55px;
+  width: 70px;
   background: #99E2D0;
-  margin-right: -60px;
+  margin-right: -70px;
   transition: margin-right ease-in-out 0.2s;
 }
 .dish__validation .fa-check-circle {
   font-size: 1.2em;
+  rotate: 15°;
+  margin-top: 25px;
+  margin-left: 20px;
 }
 
 .dish:hover .dish__validation {
   margin-right: 0;
+}
+
+.dish:hover .dish__validation .fas {
+  animation: rotate-check 1.1s;
 }
 
 /*# sourceMappingURL=style.css.map */

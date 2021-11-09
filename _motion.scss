@@ -23,6 +23,25 @@
 
 
 
+@-webkit-keyframes rotate-check {
+  from {
+      -webkit-transform: rotate-(0deg);
+  }
+  to { 
+      -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate-check {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to { 
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+
+
 
 
 
