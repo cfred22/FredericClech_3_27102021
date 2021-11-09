@@ -5,8 +5,21 @@
 // importation du fichier _base.scss
 @import "base";
 
+
+@import "motion";
+
 // importation du fichier _spinner.scss
-@import "spinner";   
+//import "spinner";   
+
+
+
+
+
+
+
+
+
+
 
 //BODY + bloc-page
 body{
@@ -252,8 +265,7 @@ footer {
 
 }
 
-// PAGE "LA PALETTE DU GOÛT" 
-
+// PAGE "LA PALETTE DU GOÛT" .... etc ******************************************* 
 
 .logo {
     display: flex;
@@ -270,7 +282,8 @@ footer {
     }
 }
 
-// photo & description restaurant
+// PHOTO & DESCRIPTION RESTAURANT
+
 .shot {
 
     .shot__visual {
@@ -299,53 +312,94 @@ footer {
         }
     }
 }
+// SECTION REPAS RESTAURANT
 
 #meals {
     .meals__starters {
         min-height: 40px;
         .meals__title {
-            p {
+            margin-bottom: 30px;
+            h4 {
                 font: {
-                    family: $font-family-title;
+                    family: $font-family-title;                    
                     weight: 300;
-                    
                 }
                 border-bottom: 3px solid $color-tertiary;
-                margin-left: 23px;
                 padding: 0 0 5px 0;
                 width: 45px;
                 text-transform: uppercase;
-
             }
-            
         }
     }
-    .meals__container {
-        @include box-shadow();
-        @include center-bloc();
-        background: $color-bloc;
-        border-radius: 20px;
-        margin: 0 23px 0 23px;
-        padding: 10px;
-        margin-bottom: 15px;
-        .meals__description {
-            font-family: $font-family-title;
-            .meals__typo-normal {
-                font-weight: 500;
-                font-size: $font-size-small;
-                margin: 0;
-            }
-            .meals__typo-light {
-                font-weight: 300;
-                margin: 5px 0 0 0;
-            }
+}  
 
+.meals__starters {
 
-        }
-    }
-        
+    margin: 0 23px 0 23px;
 
 }
+.dish {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: flex;
+    @include box-shadow();
+    font-family: $font-family-title;
+    background-color: $color-bloc;
+    border-radius: 15px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow-x: hidden;
+    width: 100%;
+    h4, p {
+        margin: 10px 0 10px 0;
+        padding-left: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__description {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        .dish__items {
+            width: 100%;
+            overflow: hidden;
+        }
+    }    
+    &__price {
+        white-space: nowrap;
+        width: 20%;
+        padding-bottom: 10px;
+
+    }    
+}    
+
+.dish__validation {
+    color: $color-bloc;
+    width: 55px;
+    background: $color-tertiary;
+    margin-right: -60px;                     // <-- margin "-" et width pour jouer sur la disparition 
+    transition: margin-right ease-in-out .2s;
+    .fa-check-circle {
+        font-size: $font-size-small;
+    }
+}
+
+.dish:hover .dish__validation {
+    margin-right: 0;                         // <-- margin "0" et width pour jouer sur la disparition 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

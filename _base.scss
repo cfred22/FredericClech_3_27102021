@@ -7,8 +7,9 @@
     border: none;
     list-style-type: none;
     text-rendering: geometricPrecision;
-    
-    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+        
 }
 
 /*-- FONTES--*/

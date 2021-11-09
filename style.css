@@ -8,81 +8,29 @@
   border: none;
   list-style-type: none;
   text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*-- FONTES--*/
-.fade_out {
-  animation: fadeout ease-in-out 3s;
-  z-index: 2;
-  opacity: 0;
-}
-.fade_out .spinner {
-  border-top: 10px solid #FF79DA;
-  border-bottom: 10px solid #99E2D0;
-  border-radius: 50%;
-  display: flex;
-  width: 125px;
-  height: 125px;
-  margin: auto;
-  animation: spin 1.2s linear infinite;
-  position: absolute;
-  justify-content: space-evenly;
-  align-items: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  opacity: 1;
-}
-.fade_out .spinner p {
-  animation: spin2 1.2s linear infinite;
-  color: white;
-  text-shadow: 1px 1px 2px dimgray;
-  opacity: 1;
-  border-radius: 50%;
-  font-family: "Shrikhand";
-  font-size: 2em;
-}
-
-@keyframes spin {
+@-webkit-keyframes slide-top {
   0% {
-    transform: rotate(0deg);
-    display: flex;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
-    transform: rotate(360deg);
-    display: none;
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
   }
 }
-@keyframes spin2 {
-  100% {
-    transform: rotate(0deg);
-  }
+@keyframes slide-top {
   0% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  85% {
-    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
-    opacity: 0;
-  }
-}
-@keyframes fadein {
-  0% {
-    opacity: 0.05;
-  }
-  85% {
-    opacity: 0.05;
-  }
-  100% {
-    opacity: 1;
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
   }
 }
 body {
@@ -363,36 +311,69 @@ footer .footer__more ul li a:hover {
 #meals .meals__starters {
   min-height: 40px;
 }
-#meals .meals__starters .meals__title p {
+#meals .meals__starters .meals__title {
+  margin-bottom: 30px;
+}
+#meals .meals__starters .meals__title h4 {
   font-family: "roboto";
   font-weight: 300;
   border-bottom: 3px solid #99E2D0;
-  margin-left: 23px;
   padding: 0 0 5px 0;
   width: 45px;
   text-transform: uppercase;
 }
-#meals .meals__container {
-  box-shadow: 0px 10px 10px -10px #b4b4b4;
-  display: flex;
-  justify-content: space-between;
-  background: white;
-  border-radius: 20px;
+
+.meals__starters {
   margin: 0 23px 0 23px;
-  padding: 10px;
-  margin-bottom: 15px;
 }
-#meals .meals__container .meals__description {
+
+.dish {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  display: flex;
+  box-shadow: 0px 10px 10px -10px #b4b4b4;
   font-family: "roboto";
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow-x: hidden;
+  width: 100%;
 }
-#meals .meals__container .meals__description .meals__typo-normal {
-  font-weight: 500;
+.dish h4, .dish p {
+  margin: 10px 0 10px 0;
+  padding-left: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.dish__description {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+.dish__description .dish__items {
+  width: 100%;
+  overflow: hidden;
+}
+.dish__price {
+  white-space: nowrap;
+  width: 20%;
+  padding-bottom: 10px;
+}
+
+.dish__validation {
+  color: white;
+  width: 55px;
+  background: #99E2D0;
+  margin-right: -60px;
+  transition: margin-right ease-in-out 0.2s;
+}
+.dish__validation .fa-check-circle {
   font-size: 1.2em;
-  margin: 0;
 }
-#meals .meals__container .meals__description .meals__typo-light {
-  font-weight: 300;
-  margin: 5px 0 0 0;
+
+.dish:hover .dish__validation {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

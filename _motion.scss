@@ -1,0 +1,32 @@
+
+// keyframes animations d'arrivée douce pour menus "dish" restaurants bloc1
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
