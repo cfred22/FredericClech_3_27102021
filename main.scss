@@ -9,7 +9,7 @@
 @import "motion";
 
 // importation du fichier _spinner.scss
-//import "spinner";   
+@import "spinner";   
 
 
 //BODY + bloc-page
@@ -21,7 +21,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        animation: fadein ease 3s; 
+        animation: fadein ease 1.2s; 
         max-width: 1440px; 
         width: 100%;
         margin: auto;/* <-- centrage complet du site */
@@ -30,12 +30,14 @@ body{
 
 //HEADER (titre + search-space + menu-intro)  
 header {
+    background-color: $color-bloc;
     .logo {
         background-color: $color-bloc;
+        margin: 15px 0 15px 0;
+
         .logo__ohmyfood {
             text-rendering: auto;
             @include center();
-            padding: 20px 0 8px 0;
             color: $color-picto;
             margin: 0;
             letter-spacing: 1px;
@@ -254,11 +256,14 @@ footer {
     position: relative;
     .fas {
         font-size: $font-size-regular;
-        margin: 15px 10% 0 0; 
-        align-items: center;  
+        align-items: baseline;  
         color: $color-picto;   
         position: absolute; 
         left: 5% !important; 
+    }
+    &__ohmyfood {
+        align-items: center;  
+        
     }
 }
 
@@ -316,8 +321,9 @@ footer {
 
 
 .dish {
-    -webkit-animation: fade-in, slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: fade-in, slide-top 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 1s;
+    -webkit-animation: fade-in, slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: fade-in, slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     display: flex;
     @include box-shadow();
     font-family: $font-family-title;
