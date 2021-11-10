@@ -12,15 +12,6 @@
 //import "spinner";   
 
 
-
-
-
-
-
-
-
-
-
 //BODY + bloc-page
 body{
     margin: 0;
@@ -315,8 +306,9 @@ footer {
 // SECTION REPAS RESTAURANT
 
 #meals {
-    .meals__starters {
+    .meals__choice {
         min-height: 40px;
+        margin: 0 23px 0 23px;
         .meals__title {
             margin-bottom: 30px;
             h4 {
@@ -333,14 +325,10 @@ footer {
     }
 }  
 
-.meals__starters {
 
-    margin: 0 23px 0 23px;
-
-}
 .dish {
-    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: fade-in, slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: fade-in, slide-top 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     display: flex;
     @include box-shadow();
     font-family: $font-family-title;
@@ -348,14 +336,10 @@ footer {
     border-radius: 15px;
     cursor: pointer;
     white-space: nowrap;
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100%;
-    h4, p {
-        margin: 10px 0 10px 0;
-        padding-left: 10px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
+    margin-bottom: 15px;
+
     &__description {
         display: flex;
         align-items: flex-end;
@@ -363,19 +347,24 @@ footer {
         .dish__items {
             width: 100%;
             overflow: hidden;
+            h4, p {
+                margin: 10px 0 10px 0;
+                padding-left: 10px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
         }
     }    
     &__price {
-        white-space: nowrap;
         width: 20%;
         padding-bottom: 10px;
-
     }    
 }    
 
 .dish__validation {
     color: $color-bloc;
     width: 70px;
+    flex-grow: 3;
     background: $color-tertiary;
     margin-right: -70px;                     // <-- margin"-" et width pour jouer sur la disparition 
     transition: margin-right ease-in-out .2s;

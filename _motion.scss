@@ -1,28 +1,35 @@
 
-// keyframes animations d'arrivée douce pour menus "dish" restaurants bloc1
+// keyframes animations d'arrivée "opacity & translate" lente pour menus "dish" restaurants bloc1
 @-webkit-keyframes slide-top {
-  0% {
+  0% { 
+    opacity: 0; 
     -webkit-transform: translateY(0);
             transform: translateY(0);
+            animation-timing-function:ease-in-out
   }
-  100% {
-    -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
+  100% { 
+    opacity: 1;
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+            animation-timing-function:ease-in-out
   }
 }
 @keyframes slide-top {
-  0% {
+  0% { 
+    opacity: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+            animation-timing-function:ease-in-out
   }
-  100% {
-    -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
+  100% { 
+    opacity: 1; 
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+            animation-timing-function:ease-in-out
   }
 }
 
-
-
+// keyframes rotation validation icone
 @-webkit-keyframes rotate-check {
   from {
       -webkit-transform: rotate-(0deg);
