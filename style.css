@@ -366,6 +366,7 @@ footer .footer__more ul li a:hover {
   display: flex;
   align-items: flex-end;
   width: 100%;
+  min-width: 0;
 }
 .dish__description .dish__items {
   width: 100%;
@@ -380,12 +381,12 @@ footer .footer__more ul li a:hover {
 .dish__price {
   width: 20%;
   padding-bottom: 10px;
+  padding-right: 40px;
 }
 
 .dish__validation {
   color: white;
   width: 70px;
-  flex-grow: 3;
   background: #99E2D0;
   margin-right: -70px;
   transition: margin-right ease-in-out 0.2s;

@@ -344,6 +344,7 @@ footer {
         display: flex;
         align-items: flex-end;
         width: 100%;
+        min-width: 0;
         .dish__items {
             width: 100%;
             overflow: hidden;
@@ -358,13 +359,13 @@ footer {
     &__price {
         width: 20%;
         padding-bottom: 10px;
+        padding-right: 40px;
     }    
 }    
 
 .dish__validation {
     color: $color-bloc;
     width: 70px;
-    flex-grow: 3;
     background: $color-tertiary;
     margin-right: -70px;                     // <-- margin"-" et width pour jouer sur la disparition 
     transition: margin-right ease-in-out .2s;
@@ -382,7 +383,7 @@ footer {
     margin-right: 0;                         // <-- margin"0" et width pour jouer sur la disparition 
 }
 .dish:hover .dish__validation .fas {
-    animation: rotate-check 1.1s;
+    animation: rotate-check 1.1s;            // <-- keyframes rotate 
 }
 
 
