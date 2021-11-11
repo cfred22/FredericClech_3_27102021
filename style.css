@@ -131,6 +131,22 @@
   }
 }
 
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .fade_out {
   animation: fadeout ease-in-out 1.2s;
   z-index: 2;
@@ -267,9 +283,13 @@ header .request .request__btn {
   box-shadow: 0px 10px 10px -10px #b4b4b4;
   border-radius: 25px;
   margin-bottom: 40px;
-  padding: 0 30px 0 30px;
+  padding: 0 40px 0 40px;
   height: 50px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  cursor: pointer;
+}
+header .request .request__btn:hover {
+  background: linear-gradient(to right bottom, #9356DC, #FF79DA);
 }
 header .request h1 {
   font-size: 1.5em;
@@ -293,7 +313,6 @@ header .request p {
   font-size: 1.5em;
   font-family: "roboto";
   padding-left: 15px;
-  margin-top: 40px;
 }
 #function__central .function {
   justify-content: center;
@@ -387,8 +406,7 @@ header .request p {
   font-family: "roboto";
   font-font-weight: 1000;
   color: #0d795e;
-  height: 30px;
-  width: 80px;
+  padding: 0 18px 0 18px;
   right: 15px;
   border-radius: 3px;
   top: 10px;
@@ -416,6 +434,12 @@ header .request p {
   color: #9356DC;
 }
 
+.restaurant__visual:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s ease-in-out;
+  animation: flash 1.5s ease-in-out;
+}
+
 footer {
   background-color: #353535;
 }
@@ -436,14 +460,14 @@ footer .footer__more ul li {
   margin-bottom: 10px;
   margin-right: 0;
 }
-footer .footer__more ul li .fas {
-  margin-right: 10px;
-}
 footer .footer__more ul li a {
   color: white;
 }
 footer .footer__more ul li a:hover {
   color: #9356DC;
+}
+footer .footer__more ul li .fas {
+  margin-right: 10px;
 }
 
 .logo {
@@ -466,6 +490,7 @@ footer .footer__more ul li a:hover {
 .shot .shot__visual {
   background-color: white;
   position: relative;
+  cursor: pointer;
 }
 .shot .shot__visual .shot__block .shot__image {
   object-fit: cover;
@@ -485,6 +510,9 @@ footer .footer__more ul li a:hover {
   letter-spacing: 1px;
 }
 
+#meals {
+  background: #f6f6f6;
+}
 #meals .meals__choice {
   min-height: 40px;
   margin: 0 23px 0 23px;
@@ -564,6 +592,7 @@ footer .footer__more ul li a:hover {
 .request {
   display: flex;
   justify-content: center;
+  margin: 0 0 40px 0;
 }
 .request .request__btn {
   font-size: 1em;
@@ -572,9 +601,13 @@ footer .footer__more ul li a:hover {
   box-shadow: 0px 10px 10px -10px #b4b4b4;
   border-radius: 25px;
   margin-bottom: 40px;
-  padding: 0 30px 0 30px;
+  padding: 0 40px 0 40px;
   height: 50px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  cursor: pointer;
+}
+.request .request__btn:hover {
+  background: linear-gradient(to right bottom, #9356DC, #FF79DA);
 }
 
 /*# sourceMappingURL=style.css.map */

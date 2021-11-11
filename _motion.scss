@@ -1,6 +1,4 @@
 
-// keyframes animations d'arrivée "opacity & translate" lente pour menus "dish" restaurants bloc1
-
 
 // keyframes rotation validation icone
 @-webkit-keyframes rotate-check {
@@ -129,6 +127,24 @@
 
 
 
+
+// léger flash sur survol photos restaurants 
+@-webkit-keyframes flash {
+	0% {
+		opacity: .8;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .8;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
  
 
