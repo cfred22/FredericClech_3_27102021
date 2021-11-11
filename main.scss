@@ -413,7 +413,13 @@ footer {
         width: 15%;
         padding-bottom: 10px;
     }    
-}    
+} 
+// NOM RESTAURANT RETOUR LIGNE !!! PARTICULARITÉ
+.rows {
+    text-overflow: none;
+    white-space: normal;
+}
+
 
 .dish__validation {
     color: $color-bloc;

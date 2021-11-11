@@ -125,6 +125,42 @@
   }
 }
 
+.dish_plus.dish {
+  animation-delay: 6s;
+  -webkit-animation: fade-in, slide-top 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: fade-in, slide-top 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  @-webkit-keyframes slide-top {
+    0% { 
+      opacity: 0; 
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              animation-timing-function:ease-in-out
+    }
+    100% { 
+      opacity: 1;
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+              animation-timing-function:ease-in-out
+    }
+  }
+  @keyframes slide-top {
+    0% { 
+      opacity: 0;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              animation-timing-function:ease-in-out;
+              
+    }
+    100% { 
+      opacity: 1; 
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+              animation-timing-function:ease-in-out;
+    }
+  }
+}
+
+
 
 
 
