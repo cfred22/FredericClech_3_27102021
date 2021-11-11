@@ -1,0 +1,50 @@
+//@media (min-width: 640px) {
+
+
+
+
+
+@media (min-width: 768px) {
+
+    #function__central {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        h2 {
+            padding-right: 40px;
+        }
+        .function {
+            max-width: 60%;
+            margin-right: 20px;
+        } 
+    }
+    #restaurants {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .restaurant {
+            .restaurant__visual {
+                margin-right: 10px;
+                max-width: 100%;
+                .restaurant__block{
+                    max-height: none;
+                    .restaurant__image{
+                        min-height: 200px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+//@media (min-width: 1024px) {
+
+
+
+
+//@media (min-width: 1280px) {
+
