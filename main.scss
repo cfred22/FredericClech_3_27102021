@@ -174,7 +174,6 @@ header {
             top: 10px;
         }
     }
-
     .restaurant__description {
         display: flex;
         justify-content: space-between;
@@ -197,18 +196,50 @@ header {
             }    
         }
         .fa-heart {
-            margin: 10px 10px 0 10px;
-            color: $color-primary;
-
+            margin: 16px 15px 0 10px;
+            color: $color-picto;
+            font-size: $font-size-small;
+            
         }
     }
 }
-.restaurant__visual:hover {
+.restaurant__block:hover {
     opacity: 1;
 	-webkit-animation: flash 1.5s ease-in-out;
 	animation: flash 1.5s ease-in-out;
+    
 }
-
+// coeur création CSS "cercles & carré"
+.heart-shape {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    opacity: 0;
+    background: $color-gradient !important;
+    transform: rotate(45deg); 
+    margin: -16px 0 0 13px;
+}
+.heart-shape:before, .heart-shape::after {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border-radius: 50%;
+    background: $color-gradient !important;
+}
+.heart-shape::before {
+    bottom: 0;
+    left: -6px;
+}
+.heart-shape::after {
+    top: -6px;
+    right: 0;
+}
+.heart-shape:hover {
+    opacity: 1;
+    -webkit-animation: flash 0.9s ease-in-out;
+	animation: flash 0.9s ease-in-out;
+}
 
 //-- FOOTER
 
@@ -272,7 +303,6 @@ footer {
 // PHOTO & DESCRIPTION RESTAURANT
 
 .shot {
-
     .shot__visual {
         background-color: white;
         position: relative;
@@ -300,6 +330,24 @@ footer {
         }
     }
 }
+.shot__name {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    .fa-heart {
+        margin-right: 30px;
+        font-size: 20px;
+    }
+    .heart-shape {
+        right: 9px;
+        top: -3px;
+
+    }
+
+
+}
+
+
 // SECTION REPAS RESTAURANT
 
 #meals {
