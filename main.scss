@@ -150,10 +150,11 @@ header {
     @include box-shadow();
     border-radius: 0 0 15px 15px;
     padding-bottom: 20px;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
     .restaurant__block {
         display: flex;
         flex-direction: column;
-        background-color: white;
         max-height: 200px;
         position: relative;
         .restaurant__image {
@@ -210,7 +211,10 @@ header {
     opacity: 1;
 	-webkit-animation: flash 1.5s ease-in-out;
 	animation: flash 1.5s ease-in-out;
-    
+}
+
+.restaurant__visual:hover {
+    @include box-shadow_2();
 }
 
 // coeur création CSS "cercles & carré"
@@ -453,6 +457,10 @@ footer {
 }
 .dish:hover .dish__validation .fas {
     animation: rotate-check 1.1s;            // <-- keyframes rotate 
+}
+
+.dish:hover {
+    @include box-shadow_2();
 }
 
 // commander btn
