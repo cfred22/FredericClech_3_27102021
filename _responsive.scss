@@ -17,11 +17,12 @@
         } 
     }
     #restaurants {
-        align-items: center;
+        display: flex;
+        align-items: center !important;
         flex-direction: column;
         .restaurant {
             .restaurant__visual {
-                max-width: 100%;
+                width: 100%;
                 padding: 35px 0 25px 0;
                 border-radius: 0 0 35px 35px;
                 margin: 25px;
@@ -37,11 +38,11 @@
     }
     .restaurant__description {
         .restaurant__info, p {
-            font-size: $font-size-small;
+            font-size: 1.1em;
         }
     }
     footer {
-        height: 200px;
+        height: 150px;
         display: flex;
         justify-content: space-between;
         padding-top: 50px;
@@ -64,6 +65,28 @@
             }
         }
     }
+    .shot__visual {
+        .shot__image {
+            min-height: 450px;
+        }
+        .shot__name {
+            top: 84% !important;
+        }
+    }
+}
+
+//@media (min-width: 1024px) 
+@media (min-width: 1024px) {
+    #restaurants {
+        .restaurant{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            .restaurant__visual {
+                max-width: 403px;
+            }
+        }
+    }
     #meals {
         
         .meals__choice {
@@ -79,22 +102,16 @@
             }
         }
     }
-}
-
-
-//@media (min-width: 1024px) 
-@media (min-width: 1024px) {
-    #restaurants {
-        .restaurant{
-            display: flex;
-            flex-wrap: wrap-reverse;
-            justify-content: center;
-            .restaurant__visual {
-                max-width: 403px;
-            }
+    .shot__visual {
+        .shot__image {
+            min-height: 500px;
+        }
+        .shot__name {
+            top: 86% !important;
         }
     }
-}  
+}
+  
 
 //@media (min-width: 1280px)  
 @media (min-width: 1280px) {

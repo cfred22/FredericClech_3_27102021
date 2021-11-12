@@ -270,11 +270,12 @@
   }
 
   #restaurants {
-    align-items: center;
+    display: flex;
+    align-items: center !important;
     flex-direction: column;
   }
   #restaurants .restaurant .restaurant__visual {
-    max-width: 100%;
+    width: 100%;
     padding: 35px 0 25px 0;
     border-radius: 0 0 35px 35px;
     margin: 25px;
@@ -288,11 +289,11 @@
   }
 
   .restaurant__description .restaurant__info, .restaurant__description p {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   footer {
-    height: 200px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
@@ -313,6 +314,23 @@
     margin-right: 60px !important;
   }
 
+  .shot__visual .shot__image {
+    min-height: 450px;
+  }
+  .shot__visual .shot__name {
+    top: 84% !important;
+  }
+}
+@media (min-width: 1024px) {
+  #restaurants .restaurant {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  #restaurants .restaurant .restaurant__visual {
+    max-width: 403px;
+  }
+
   #meals .meals__choice {
     display: flex;
     min-width: 98%;
@@ -325,15 +343,12 @@
     margin-right: 30px;
     margin-top: 20px;
   }
-}
-@media (min-width: 1024px) {
-  #restaurants .restaurant {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+
+  .shot__visual .shot__image {
+    min-height: 500px;
   }
-  #restaurants .restaurant .restaurant__visual {
-    max-width: 403px;
+  .shot__visual .shot__name {
+    top: 86% !important;
   }
 }
 @media (min-width: 1280px) {
@@ -467,6 +482,7 @@ header .request p {
   position: absolute;
   border-radius: 50%;
   background-color: #9356DC;
+  font-family: "roboto";
   color: white;
   height: 24px;
   width: 24px;
@@ -478,11 +494,14 @@ header .request p {
   display: flex;
   justify-content: flex start;
   align-items: baseline;
+  margin-top: 8px;
+  font-family: "roboto";
+  cursor: pointer;
 }
 #function__central .function__button .function__button-in p {
-  font-size: 1.2em;
+  font-size: 1em;
   padding-left: 35px;
-  padding-right: 30px;
+  padding-right: 42px;
 }
 #function__central .function__button .function__button-in i.fas {
   color: #5c5c5c;

@@ -55,6 +55,7 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
     position: absolute;
     border-radius: 50%;
     background-color: $color-primary;
+    font-family: $font-family-title;
     color: $color-bloc;
     height: 24px;
     width: 24px;
@@ -67,10 +68,13 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
     display: flex;
     justify-content: flex start;
     align-items: baseline;
+    margin-top: 8px;
+    font-family: $font-family-title;
+    cursor: pointer;
     p {
-        font-size: $font-size-small;
+        font-size: $font-size-xsmall;
         padding-left: 35px;
-        padding-right: 30px;
+        padding-right: 42px;
     }
 }
 
