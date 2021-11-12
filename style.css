@@ -532,7 +532,6 @@ header .request p {
   border-radius: 0 0 15px 15px;
   padding-bottom: 20px;
   background-color: white;
-  border-radius: 15px 15px 0 0;
 }
 .restaurant__visual .restaurant__block {
   display: flex;
