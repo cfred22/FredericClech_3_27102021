@@ -277,6 +277,7 @@
     max-width: 100%;
     padding: 35px 0 25px 0;
     border-radius: 0 0 35px 35px;
+    margin: 25px;
   }
   #restaurants .restaurant .restaurant__visual .restaurant__block {
     max-height: none;
@@ -291,7 +292,7 @@
   }
 
   footer {
-    height: 250px;
+    height: 200px;
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
