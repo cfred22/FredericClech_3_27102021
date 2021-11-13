@@ -1,0 +1,24 @@
+/*--- BASE GÉNÉRALE DU SITE ----*/
+
+*, *:before, *:after   /*-- box-sizing pour gérer les dimensions  --*/
+{
+    box-sizing: border-box;  /*- résoudre pbm padding & marging pour calcul des box et des % par exemple-*/
+    text-decoration: none; 
+    border: none;
+    list-style-type: none;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+        
+}
+
+/*-- FONTES--*/
+$font-family-title: 'roboto';
+$font-family-logo: 'Shrikhand';
+
+$font-size-regular: 1.5em;
+$font-size-small: 1.2em;
+$font-size-xsmall: 1em;
+$font-size-big: 2em;
+
+

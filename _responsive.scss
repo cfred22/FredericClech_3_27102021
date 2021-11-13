@@ -1,0 +1,131 @@
+
+// RESPONSIVE MEDIA  
+
+//@media (min-width: 768px) 
+@media (min-width: 768px) {
+
+    #function__central {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        h2 {
+            padding-right: 40px;
+        }
+        .function {
+            max-width: 60%;
+            margin-right: 20px;
+        } 
+    }
+    #restaurants {
+        display: flex;
+        align-items: center !important;
+        flex-direction: column;
+        .restaurant {
+            .restaurant__visual {
+                width: 100%;
+                border-radius: 35px;
+                margin: 25px;
+                
+                .restaurant__block{
+                    max-height: none;
+                    .restaurant__image{
+                        min-height: 300px;
+                        border-radius: 35px 35px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    .restaurant__description {
+        .restaurant__info, p {
+            font-size: 1.1em;
+        }
+    }
+    footer {
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        .footer__logo {
+            align-content: center;
+            padding: 0 30px 0 30px;
+            
+    
+        }
+        .footer__more {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            ul {
+                display: flex;
+    
+                li {
+                    margin-right: 60px !important;
+                }
+            }
+        }
+    }
+    .shot__visual {
+        .shot__image {
+            min-height: 450px !important;
+        }
+        .shot__name {
+            top: 84% !important;
+        }
+    }
+}
+
+//@media (min-width: 1024px) 
+@media (min-width: 1024px) {
+    #restaurants {
+        .restaurant{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            .restaurant__visual {
+                max-width: 403px;
+            }
+        }
+    }
+    #meals {
+        
+        .meals__choice {
+            display: flex;
+            min-width: 98%;
+            justify-content: center;
+            .meals__title {
+                margin-right: 65px;
+            }
+            .dish {
+                margin-right: 30px;
+                margin-top: 20px;
+            }
+        }
+    }
+    .shot__visual {
+        .shot__image {
+            min-height: 500px !important;
+        }
+        .shot__name {
+            top: 86% !important;
+        }
+    }
+}
+  
+
+//@media (min-width: 1280px)  
+@media (min-width: 1280px) {
+    #restaurants {
+        .restaurant{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            .restaurant__visual {
+                min-width: 600px;
+                
+            }
+        }
+    }
+} 
+
+

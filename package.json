@@ -1,0 +1,12 @@
+{
+  "name": "p3_clech_frederic",
+  "version": "1.0.0",
+  "description": "p3_clech_frederic",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./main.scss:./style.css"
+  },
+  "author": "",
+  "license": "ISC"
+
+}
