@@ -600,7 +600,7 @@ header .request p {
   opacity: 0;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC) !important;
   transform: rotate(45deg);
-  margin: -17px 0 0 12px;
+  margin: -17px 0 0 13px;
 }
 
 .heart-shape:before, .heart-shape::after {
@@ -714,7 +714,7 @@ footer .footer__more ul li .fas {
   font-size: 20px;
 }
 .shot__name .heart-shape {
-  right: 9px;
+  right: 10px;
   top: -3px;
 }
 

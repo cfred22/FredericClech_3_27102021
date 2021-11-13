@@ -227,7 +227,7 @@ header {
     opacity: 0;
     background: $color-gradient !important;
     transform: rotate(45deg); 
-    margin: -17px 0 0 12px;
+    margin: -17px 0 0 13px;
 }
 .heart-shape:before, .heart-shape::after {
     position: absolute;
@@ -364,7 +364,7 @@ footer {
         font-size: 20px;
     }
     .heart-shape {
-        right: 9px;
+        right: 10px;
         top: -3px;
 
     }
