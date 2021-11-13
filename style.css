@@ -429,7 +429,7 @@ header .request .request__btn {
   transition: box-shadow 0.4s;
 }
 header .request .request__btn:hover {
-  background: linear-gradient(to right bottom, #9356DC, #FF79DA);
+  background: linear-gradient(to right bottom, #a467ee, #f886d8);
   box-shadow: 0px 15px 20px -15px #757373;
   background-position: bottom center;
 }
@@ -821,7 +821,7 @@ footer .footer__more ul li .fas {
   transition: box-shadow 0.4s;
 }
 .request .request__btn:hover {
-  background: linear-gradient(to right bottom, #9356DC, #FF79DA);
+  background: linear-gradient(to right bottom, #a467ee, #f886d8);
   box-shadow: 0px 15px 20px -15px #757373;
   background-position: bottom center;
 }

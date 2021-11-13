@@ -107,9 +107,8 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
        transition: box-shadow 0.4s;
     }
     .request__btn:hover {
-        background: linear-gradient(to right bottom, $color-primary, $color-secondary);
+        background: linear-gradient(to right bottom, #a467ee, #f886d8);
         @include box-shadow_2();
         background-position: bottom center;
-        
     }
 }
