@@ -543,6 +543,7 @@ header .request p {
   object-fit: cover;
   height: 170px;
   border-radius: 15px 15px 0 0;
+  width: 100%;
 }
 .restaurant__visual .restaurant__block .restaurant__txt-overlay {
   position: absolute;
@@ -598,7 +599,7 @@ header .request p {
   opacity: 0;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC) !important;
   transform: rotate(45deg);
-  margin: -16.8px 0 0 12.5px;
+  margin: -17px 0 0 12px;
 }
 
 .heart-shape:before, .heart-shape::after {
