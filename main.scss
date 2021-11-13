@@ -160,6 +160,7 @@ header {
             object-fit: cover;
             height: 170px;
             border-radius: 15px 15px 0 0;
+            width: 100%;
         }
         .restaurant__txt-overlay {
             position: absolute;
@@ -224,7 +225,7 @@ header {
     opacity: 0;
     background: $color-gradient !important;
     transform: rotate(45deg); 
-    margin: -16.8px 0 0 12.5px;
+    margin: -17px 0 0 12px;
 }
 .heart-shape:before, .heart-shape::after {
     position: absolute;
