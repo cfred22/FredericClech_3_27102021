@@ -94,6 +94,7 @@ header {
     }
 }
 
+
 //-- CENTRAL FONCTIONNEMENT
 #function__central {
     background-color: $color-bloc;
@@ -125,6 +126,7 @@ header {
         }
     }
 }
+
 
 //-- SECTION VIGNETTES
 #restaurants {
@@ -259,12 +261,17 @@ footer {
             color: $color-bloc;
             margin: 0;
             letter-spacing: 1px;
+            transition: color .4s; 
             font: {
                 size: $font-size-small;
                 family: $font-family-logo;
             }
         }
+        .footer__ohmyfood:hover {
+            color: $color-primary;
+        }
     }
+    
     .footer__more {
         ul {
             padding: 0 10px 0 23px;
@@ -272,9 +279,10 @@ footer {
                 font-family: $font-family-title;
                 color: $color-bloc;
                 margin-bottom: 10px;
-                margin-right: 0; 
+                margin-right: 0;
                 a { 
-                    color: $color-bloc  
+                    color: $color-bloc;  
+                    transition: color .4s; 
                 }
                 a:hover { 
                     color: $color-primary;  
@@ -308,12 +316,13 @@ footer {
         align-items: baseline;  
         color: $color-picto;   
         position: absolute; 
-        left: 5% !important; 
+        left: 5% !important;
+        transition: 0.3s; 
     }
-    &__ohmyfood {
-        align-items: center;  
-        
+    .fas:hover {
+        color: $color-primary;
     }
+
 }
 
 // PHOTO & DESCRIPTION RESTAURANT

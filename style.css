@@ -426,10 +426,11 @@ header .request .request__btn {
   height: 50px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   cursor: pointer;
+  transition: box-shadow 0.4s;
 }
 header .request .request__btn:hover {
   background: linear-gradient(to right bottom, #9356DC, #FF79DA);
-  box-shadow: 0px 15px 15px -15px #949292;
+  box-shadow: 0px 15px 20px -15px #757373;
 }
 header .request h1 {
   font-size: 1.5em;
@@ -470,10 +471,10 @@ header .request p {
   position: relative;
   margin-bottom: 30px;
   box-shadow: 0px 10px 10px -10px #b4b4b4;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 }
 #function__central .function__button.function__button:hover {
-  box-shadow: 0px 15px 15px -15px #949292;
+  box-shadow: 0px 15px 20px -15px #757373;
   background-color: #f5edff;
 }
 #function__central .function__button.function__button:hover i.fas {
@@ -589,7 +590,7 @@ header .request p {
 }
 
 .restaurant__visual:hover {
-  box-shadow: 0px 15px 15px -15px #949292;
+  box-shadow: 0px 15px 20px -15px #757373;
 }
 
 .heart-shape {
@@ -635,8 +636,12 @@ footer .footer__logo .footer__ohmyfood {
   color: white;
   margin: 0;
   letter-spacing: 1px;
+  transition: color 0.4s;
   font-size: 1.2em;
   font-family: "Shrikhand";
+}
+footer .footer__logo .footer__ohmyfood:hover {
+  color: #9356DC;
 }
 footer .footer__more ul {
   padding: 0 10px 0 23px;
@@ -649,6 +654,7 @@ footer .footer__more ul li {
 }
 footer .footer__more ul li a {
   color: white;
+  transition: color 0.4s;
 }
 footer .footer__more ul li a:hover {
   color: #9356DC;
@@ -669,9 +675,10 @@ footer .footer__more ul li .fas {
   color: black;
   position: absolute;
   left: 5% !important;
+  transition: 0.3s;
 }
-.logo__ohmyfood {
-  align-items: center;
+.logo .fas:hover {
+  color: #9356DC;
 }
 
 .shot .shot__visual {
@@ -791,7 +798,7 @@ footer .footer__more ul li .fas {
 }
 
 .dish:hover {
-  box-shadow: 0px 15px 15px -15px #949292;
+  box-shadow: 0px 15px 20px -15px #757373;
 }
 
 .request {
@@ -810,10 +817,11 @@ footer .footer__more ul li .fas {
   height: 50px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   cursor: pointer;
+  transition: box-shadow 0.4s;
 }
 .request .request__btn:hover {
   background: linear-gradient(to right bottom, #9356DC, #FF79DA);
-  box-shadow: 0px 15px 15px -15px #949292;
+  box-shadow: 0px 15px 20px -15px #757373;
 }
 
 /*# sourceMappingURL=style.css.map */
