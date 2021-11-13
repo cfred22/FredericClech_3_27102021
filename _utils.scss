@@ -109,6 +109,7 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
     .request__btn:hover {
         background: linear-gradient(to right bottom, $color-primary, $color-secondary);
         @include box-shadow_2();
+        background-position: bottom center;
         
     }
 }
