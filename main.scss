@@ -171,7 +171,7 @@ header {
             background-color: $color-tertiary;
             font: {
                 family: $font-family-title;
-                weight: 1000;
+                weight: 500;
             }
             color: #0d795e;
             padding: 0 18px 0 18px;           //<-- modulable avec padding si chgt de txt
@@ -205,7 +205,10 @@ header {
             margin: 16px 15px 0 10px;
             color: $color-picto;
             font-size: $font-size-small;
-            
+            transition: color .3s; 
+        }
+        .fa-heart:hover {
+            color: white; 
         }
     }
 }
@@ -304,7 +307,7 @@ footer {
 
 
 
-// PAGES "LA PALETTE DU GOÛT" .... etc ******************************************* 
+// PAGES restaurant "LA PALETTE DU GOÛT"; .... etc ******************************************* 
 
 .logo {
     display: flex;
@@ -321,6 +324,7 @@ footer {
     }
     .fas:hover {
         color: $color-primary;
+        
     }
 
 }
@@ -362,6 +366,10 @@ footer {
     .fa-heart {
         margin-right: 30px;
         font-size: 20px;
+        transition: color .3s; 
+    }
+    .fa-heart:hover {
+        color: white; 
     }
     .heart-shape {
         right: 10px;

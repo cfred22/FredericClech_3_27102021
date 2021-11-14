@@ -80,7 +80,7 @@
     #restaurants {
         .restaurant{
             display: flex;
-            flex-wrap: wrap-reverse;
+            flex-wrap: wrap;
             justify-content: center;
             .restaurant__visual {
                 max-width: 403px;
@@ -118,7 +118,7 @@
     #restaurants {
         .restaurant{
             display: flex;
-            flex-wrap: wrap-reverse;
+            flex-wrap: wrap;
             justify-content: center;
             .restaurant__visual {
                 min-width: 600px;

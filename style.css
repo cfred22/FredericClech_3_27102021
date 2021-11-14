@@ -323,7 +323,7 @@
 @media (min-width: 1024px) {
   #restaurants .restaurant {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: center;
   }
   #restaurants .restaurant .restaurant__visual {
@@ -353,7 +353,7 @@
 @media (min-width: 1280px) {
   #restaurants .restaurant {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: center;
   }
   #restaurants .restaurant .restaurant__visual {
@@ -553,7 +553,7 @@ header .request p {
   line-height: 0;
   background-color: #99E2D0;
   font-family: "roboto";
-  font-weight: 1000;
+  font-weight: 500;
   color: #0d795e;
   padding: 0 18px 0 18px;
   right: 15px;
@@ -582,6 +582,10 @@ header .request p {
   margin: 16px 15px 0 10px;
   color: black;
   font-size: 1.2em;
+  transition: color 0.3s;
+}
+.restaurant__visual .restaurant__description .fa-heart:hover {
+  color: white;
 }
 
 .restaurant__block:hover {
@@ -713,6 +717,10 @@ footer .footer__more ul li .fas {
 .shot__name .fa-heart {
   margin-right: 30px;
   font-size: 20px;
+  transition: color 0.3s;
+}
+.shot__name .fa-heart:hover {
+  color: white;
 }
 .shot__name .heart-shape {
   right: 10px;
