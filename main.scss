@@ -205,11 +205,12 @@ header {
             margin: 16px 15px 0 10px;
             color: $color-picto;
             font-size: $font-size-small;
-            transition: color .3s; 
+            transition: scale .3s; 
+            &:hover {
+                transform: scale(1.1); 
+            }
         }
-        .fa-heart:hover {
-            color: white; 
-        }
+       
     }
 }
 .restaurant__block:hover {
@@ -365,11 +366,11 @@ footer {
     justify-content: space-between;
     .fa-heart {
         margin-right: 30px;
-        font-size: 20px;
-        transition: color .3s; 
+        font-size: $font-size-small;
+        transition: scale .3s; 
     }
     .fa-heart:hover {
-        color: white; 
+        transform: scale(1.1); 
     }
     .heart-shape {
         right: 10px;

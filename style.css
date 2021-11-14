@@ -30,11 +30,11 @@
   }
 }
 .dish:nth-child(2) {
-  animation-delay: 3s;
-  -webkit-animation: fade-in, slide-top 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: fade-in, slide-top 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 4s;
+  -webkit-animation: slide-fade 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fade 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-@-webkit-keyframes slide-top {
+@-webkit-keyframes slide-fade {
   0% {
     opacity: 0;
     -webkit-transform: translateY(0);
@@ -48,7 +48,7 @@
     animation-timing-function: ease-in-out;
   }
 }
-@keyframes slide-top {
+@keyframes slide-fade {
   0% {
     opacity: 0;
     -webkit-transform: translateY(0);
@@ -65,10 +65,10 @@
 
 .dish:nth-child(3) {
   animation-delay: 4s;
-  -webkit-animation: fade-in, slide-top 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: fade-in, slide-top 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-fade 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fade 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-@-webkit-keyframes slide-top {
+@-webkit-keyframes slide-fade {
   0% {
     opacity: 0;
     -webkit-transform: translateY(0);
@@ -82,7 +82,7 @@
     animation-timing-function: ease-in-out;
   }
 }
-@keyframes slide-top {
+@keyframes slide-fade {
   0% {
     opacity: 0;
     -webkit-transform: translateY(0);
@@ -99,8 +99,8 @@
 
 .meals__choice :nth-child(4) {
   animation-delay: 5s;
-  -webkit-animation: fade-in, slide-top 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: fade-in, slide-top 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-fade 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fade 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @-webkit-keyframes slide-top {
   0% {
@@ -116,7 +116,7 @@
     animation-timing-function: ease-in-out;
   }
 }
-@keyframes slide-top {
+@keyframes slide-fade {
   0% {
     opacity: 0;
     -webkit-transform: translateY(0);
@@ -133,8 +133,8 @@
 
 .dish_plus.dish {
   animation-delay: 6s;
-  -webkit-animation: fade-in, slide-top 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: fade-in, slide-top 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-fade 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fade 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @-webkit-keyframes slide-top {
   0% {
@@ -150,7 +150,7 @@
     animation-timing-function: ease-in-out;
   }
 }
-@keyframes slide-top {
+@keyframes slide-fade {
   0% {
     opacity: 0;
     -webkit-transform: translateY(0);
@@ -353,7 +353,7 @@
 @media (min-width: 1280px) {
   #restaurants .restaurant {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
   }
   #restaurants .restaurant .restaurant__visual {
@@ -582,10 +582,10 @@ header .request p {
   margin: 16px 15px 0 10px;
   color: black;
   font-size: 1.2em;
-  transition: color 0.3s;
+  transition: scale 0.3s;
 }
 .restaurant__visual .restaurant__description .fa-heart:hover {
-  color: white;
+  transform: scale(1.1);
 }
 
 .restaurant__block:hover {
@@ -716,11 +716,11 @@ footer .footer__more ul li .fas {
 }
 .shot__name .fa-heart {
   margin-right: 30px;
-  font-size: 20px;
-  transition: color 0.3s;
+  font-size: 1.2em;
+  transition: scale 0.3s;
 }
 .shot__name .fa-heart:hover {
-  color: white;
+  transform: scale(1.1);
 }
 .shot__name .heart-shape {
   right: 10px;

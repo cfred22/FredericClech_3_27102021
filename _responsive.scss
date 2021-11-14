@@ -118,7 +118,7 @@
     #restaurants {
         .restaurant{
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
             justify-content: center;
             .restaurant__visual {
                 min-width: 600px;
