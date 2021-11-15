@@ -235,7 +235,7 @@ header {
     opacity: 0;
     background: $color-gradient !important;
     transform: rotate(45deg); 
-    margin: -16.8px 0 0 12.5px;
+    margin: -16px 12px 0 12px;
 }
 .heart-shape:before, .heart-shape::after {
     position: absolute;
@@ -256,12 +256,10 @@ header {
 .heart-shape:hover {
     opacity: 1;
     -webkit-animation: flash 0.5s ease-in-out;
-	animation: flash 0.5s ease-in-out;
+	animation: flash 0.9s ease-in-out;
 }
 
-
 //-- FOOTER
-
 footer {
     background-color: $color-verydarkgrey;
     .footer__logo {
