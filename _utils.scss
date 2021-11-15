@@ -47,7 +47,7 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
 }
 
 @mixin buttonfun-hover() {     // <-hover bouton fonctionnement
-    transition-duration: 0.3s;
+    transition-duration: .4s;
     &.function__button:hover {
         @include box-shadow_2();
         background-color: $color-hoverfun;
@@ -104,11 +104,14 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
        height: 50px;
        background: $color-gradient;
        cursor: pointer;
-       transition: box-shadow 0.4s;
+       transition: brightness(1).9s;
+       transition: box-shadow .4s;
     }
     .request__btn:hover {
+        filter: brightness(1.1);
+        -webkit-animation: flash 0.9s ease-in-out;
+        animation: flash 0.9s ease-in-out;
         background: linear-gradient(to right bottom, #a467ee, #f886d8);
         @include box-shadow_2();
-        background-position: bottom center;
     }
 }
