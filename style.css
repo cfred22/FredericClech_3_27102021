@@ -30,7 +30,6 @@
   }
 }
 .dish:nth-child(2) {
-  animation-delay: 4s;
   -webkit-animation: slide-fade 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-fade 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -64,7 +63,6 @@
 }
 
 .dish:nth-child(3) {
-  animation-delay: 4s;
   -webkit-animation: slide-fade 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-fade 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -98,7 +96,6 @@
 }
 
 .meals__choice :nth-child(4) {
-  animation-delay: 5s;
   -webkit-animation: slide-fade 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-fade 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -132,7 +129,6 @@
 }
 
 .dish_plus.dish {
-  animation-delay: 6s;
   -webkit-animation: slide-fade 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-fade 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -426,7 +422,6 @@ header .request .request__btn {
   height: 50px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   cursor: pointer;
-  transition: brightness(1) 0.9s;
   transition: box-shadow 0.4s;
 }
 header .request .request__btn:hover {
@@ -607,18 +602,19 @@ header .request p {
 
 .heart-shape {
   position: relative;
-  width: 13.5px;
-  height: 13.5px;
+  width: 12.4px;
+  height: 12.4px;
   opacity: 0;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC) !important;
   transform: rotate(45deg);
-  margin: -16px 12px 0 12px;
+  right: -13.2px;
+  top: -15.8px;
 }
 
 .heart-shape:before, .heart-shape::after {
   position: absolute;
-  width: 13.5px;
-  height: 13.5px;
+  width: 12px;
+  height: 12px;
   content: "";
   border-radius: 50%;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC) !important;
@@ -626,11 +622,11 @@ header .request p {
 
 .heart-shape::before {
   bottom: 0;
-  left: -6.25px;
+  left: -6px;
 }
 
 .heart-shape::after {
-  top: -6.25px;
+  top: -6px;
   right: 0;
 }
 
@@ -732,8 +728,8 @@ footer .footer__more ul li .fas {
   color: #eaeaea;
 }
 .shot__name .heart-shape {
-  right: 10px;
-  top: -3px;
+  right: -3.5px;
+  top: -19px;
 }
 
 #meals {
@@ -834,7 +830,6 @@ footer .footer__more ul li .fas {
   height: 50px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   cursor: pointer;
-  transition: brightness(1) 0.9s;
   transition: box-shadow 0.4s;
 }
 .request .request__btn:hover {

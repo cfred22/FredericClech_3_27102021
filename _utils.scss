@@ -104,7 +104,6 @@ $color-gradient: linear-gradient(to bottom right, $color-secondary, $color-prima
        height: 50px;
        background: $color-gradient;
        cursor: pointer;
-       transition: brightness(1).9s;
        transition: box-shadow .4s;
     }
     .request__btn:hover {

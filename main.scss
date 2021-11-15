@@ -214,7 +214,6 @@ header {
                 animation: flash 0.9s ease-in-out;
             }
         }
-       
     }
 }
 .restaurant__block:hover {
@@ -230,27 +229,29 @@ header {
 // coeur création CSS "cercles & carré"
 .heart-shape {
     position: relative;
-    width: 13.5px;
-    height: 13.5px;
+    width: 12.4px;
+    height: 12.4px;
     opacity: 0;
     background: $color-gradient !important;
     transform: rotate(45deg); 
-    margin: -16px 12px 0 12px;
+    //margin: -15.8px 12px 0 13px !important;
+    right: -13.2px;
+    top: -15.8px;
 }
 .heart-shape:before, .heart-shape::after {
     position: absolute;
-    width: 13.5px;
-    height: 13.5px;
+    width: 12px;
+    height: 12px;
     content: "";
     border-radius: 50%;
     background: $color-gradient !important;
 }
 .heart-shape::before {
     bottom: 0;
-    left: -6.25px;
+    left: -6px;
 }
 .heart-shape::after {
-    top: -6.25px;
+    top: -6px;
     right: 0;
 }
 .heart-shape:hover {
@@ -377,8 +378,8 @@ footer {
         }
     }
     .heart-shape {
-        right: 10px;
-        top: -3px;
+        right: -3.5px;
+        top: -19px;
     }
 }
 
