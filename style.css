@@ -30,8 +30,8 @@
   }
 }
 .dish:nth-child(2) {
-  -webkit-animation: slide-fade 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-fade 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-fade 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fade 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @-webkit-keyframes slide-fade {
   0% {
@@ -63,8 +63,9 @@
 }
 
 .dish:nth-child(3) {
-  -webkit-animation: slide-fade 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-fade 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-fade 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fade 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.8s;
 }
 @-webkit-keyframes slide-fade {
   0% {
@@ -96,8 +97,9 @@
 }
 
 .meals__choice :nth-child(4) {
-  -webkit-animation: slide-fade 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-fade 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-fade 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fade 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.2s;
 }
 @-webkit-keyframes slide-fade {
   0% {
@@ -129,8 +131,9 @@
 }
 
 .dish_plus.dish {
-  -webkit-animation: slide-fade 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-fade 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-fade 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fade 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.8s;
 }
 @-webkit-keyframes slide-fade {
   0% {
@@ -669,6 +672,21 @@ footer .footer__more ul li a:hover {
 }
 footer .footer__more ul li .fas {
   margin-right: 10px;
+}
+
+body {
+  margin: 0;
+  background-color: #eaeaea;
+  z-index: 1;
+}
+body #bloc_page2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  /* <-- centrage complet du site */
 }
 
 .logo {

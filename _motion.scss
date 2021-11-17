@@ -21,8 +21,8 @@
 // ciblage des containers "dish" pour animations one by one !
 
 .dish:nth-child(2) {
-  -webkit-animation: slide-fade 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-fade 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-fade 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-fade 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   @-webkit-keyframes slide-fade {
     0% { 
       opacity: 0; 
@@ -55,8 +55,9 @@
 }
 
 .dish:nth-child(3) {
-  -webkit-animation: slide-fade 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-fade 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-fade 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-fade 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: .8s;
   @-webkit-keyframes slide-fade {
     0% { 
       opacity: 0; 
@@ -89,8 +90,9 @@
 }
 
 .meals__choice :nth-child(4) {
-  -webkit-animation: slide-fade 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-fade 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-fade 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-fade 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1.2s;
   @-webkit-keyframes slide-fade {
     0% { 
       opacity: 0; 
@@ -123,8 +125,9 @@
 }
 
 .dish_plus.dish {
-  -webkit-animation: slide-fade 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-fade 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-fade 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-fade 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1.8s;
   @-webkit-keyframes slide-fade {
     0% { 
       opacity: 0; 
